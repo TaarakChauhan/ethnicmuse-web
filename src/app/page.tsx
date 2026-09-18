@@ -203,17 +203,24 @@ export default function Home() {
             {GALLERY.map((shot, index) => (
               <figure
                 key={shot.src}
-                className="mb-4 break-inside-avoid overflow-hidden rounded-[1.4rem] border border-[#e8b4c8]/40 bg-white/70 shadow-[0_10px_30px_rgba(122,61,85,0.08)]"
+                className="gallery-frame relative mb-4 break-inside-avoid overflow-hidden rounded-[1.4rem] border border-[#e8b4c8]/40 bg-white/70 shadow-[0_10px_30px_rgba(122,61,85,0.08)]"
+                onContextMenu={(event) => event.preventDefault()}
               >
                 <Image
                   src={shot.src}
                   alt={shot.alt}
                   width={1200}
                   height={1600}
-                  className="h-auto w-full object-cover"
+                  className="gallery-image h-auto w-full object-cover select-none"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   priority={index < 3}
+                  draggable={false}
+                  onDragStart={(event) => event.preventDefault()}
                 />
+                <div className="gallery-protection" aria-hidden="true" />
+                <span className="gallery-watermark" aria-hidden="true">
+                  EthnicMuse
+                </span>
               </figure>
             ))}
           </div>

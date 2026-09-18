@@ -26,3 +26,43 @@ body {
 ::selection {
   background: rgb(196 107 140 / 0.28);
 }
+
+.gallery-frame {
+  isolation: isolate;
+}
+
+.gallery-image {
+  -webkit-user-drag: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+.gallery-protection {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+  cursor: default;
+  background: transparent;
+  user-select: none;
+}
+
+.gallery-watermark {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.7rem;
+  z-index: 20;
+  padding: 0.24rem 0.5rem;
+  border: 1px solid rgb(255 247 251 / 0.36);
+  border-radius: 999px;
+  color: rgb(255 247 251 / 0.88);
+  background: rgb(122 61 85 / 0.24);
+  box-shadow: 0 2px 12px rgb(74 47 58 / 0.18);
+  backdrop-filter: blur(4px);
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  line-height: 1;
+  pointer-events: none;
+  text-shadow: 0 1px 5px rgb(74 47 58 / 0.72);
+  user-select: none;
+}

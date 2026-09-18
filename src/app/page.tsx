@@ -19,6 +19,25 @@ const GALLERY = [
   { src: "/gallery/gallery-07.jpg", alt: "Brand moodboard saree look" },
   { src: "/gallery/gallery-08.jpg", alt: "Velvet saree character portrait" },
   { src: "/gallery/gallery-09.jpg", alt: "Commercial ethnic fashion crop" },
+  { src: "/gallery/gallery-10.jpg", alt: "Coral silk saree editorial" },
+  { src: "/gallery/gallery-11.jpg", alt: "Gold jewelry ethnic portrait" },
+  { src: "/gallery/gallery-12.jpg", alt: "Window light saree study" },
+  { src: "/gallery/gallery-13.jpg", alt: "Studio ethnic fashion look" },
+  { src: "/gallery/gallery-14.jpg", alt: "Rose blush evening glam" },
+  { src: "/gallery/gallery-15.jpg", alt: "Mirror light saree portrait" },
+  { src: "/gallery/gallery-16.jpg", alt: "Pastel ethnic wear frame" },
+  { src: "/gallery/gallery-17.jpg", alt: "Bridal adjacent glam look" },
+  { src: "/gallery/gallery-18.jpg", alt: "Soft rim light saree" },
+  { src: "/gallery/gallery-19.jpg", alt: "Luxury textile close portrait" },
+  { src: "/gallery/gallery-20.jpg", alt: "Festival glow ethnic style" },
+  { src: "/gallery/gallery-21.jpg", alt: "Cream blouse ethnic portrait" },
+  { src: "/gallery/gallery-22.jpg", alt: "Emerald evening saree" },
+  { src: "/gallery/gallery-23.jpg", alt: "Blush tone fashion stock" },
+  { src: "/gallery/gallery-24.jpg", alt: "Ornate jewelry editorial" },
+  { src: "/gallery/gallery-25.jpg", alt: "Quiet luxury ethnic look" },
+  { src: "/gallery/gallery-26.jpg", alt: "Candle glow saree mood" },
+  { src: "/gallery/gallery-27.jpg", alt: "Modern desi fashion frame" },
+  { src: "/gallery/gallery-28.jpg", alt: "Campaign ready ethnic portrait" },
 ];
 
 const NAV = [
@@ -37,25 +56,32 @@ export default function Home() {
         1,
         document.documentElement.scrollHeight - window.innerHeight,
       );
-      setProgress(Math.min(1, window.scrollY / (max * 0.55)));
+      // Blur starts later so more photos stay sharp first
+      const raw = window.scrollY / (max * 0.78);
+      setProgress(Math.min(1, Math.max(0, (raw - 0.22) / 0.78)));
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const blurPx = useMemo(() => Math.round(progress * 14), [progress]);
-  const veil = useMemo(() => Math.min(0.78, progress * 0.95), [progress]);
-  const gateVisible = progress > 0.28;
+  const blurPx = useMemo(() => Math.round(progress * 16), [progress]);
+  const veil = useMemo(() => Math.min(0.82, progress * 1.05), [progress]);
+  const gateVisible = progress > 0.18;
 
   return (
-    <div className="min-h-screen bg-[#0a0a0b] text-[#f5f0ea]">
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#0a0a0b]/80 backdrop-blur-md">
+    <div className="min-h-screen bg-[#fff7fb] text-[#4a2f3a]">
+      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_#ffe4ef_0%,_#fff7fb_45%,_#f8eef5_100%)]" />
+
+      <header className="fixed inset-x-0 top-0 z-50 border-b border-[#e8b4c8]/35 bg-[#fff7fb]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-8 px-5 py-4 md:px-8">
-          <a href="#top" className="text-lg font-semibold tracking-[0.18em] md:text-xl">
+          <a
+            href="#top"
+            className="font-serif text-xl tracking-[0.12em] text-[#7a3d55] md:text-2xl"
+          >
             EthnicMuse
           </a>
-          <nav className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm text-[#d8cfc4] md:gap-x-10 md:text-[15px]">
+          <nav className="flex flex-wrap items-center justify-end gap-x-6 gap-y-2 text-sm text-[#8a5a6c] md:gap-x-10 md:text-[15px]">
             {NAV.map((item) =>
               item.href ? (
                 <a
@@ -63,7 +89,7 @@ export default function Home() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="transition hover:text-white"
+                  className="transition hover:text-[#7a3d55]"
                 >
                   {item.label}
                 </a>
@@ -71,7 +97,7 @@ export default function Home() {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="transition hover:text-white"
+                  className="transition hover:text-[#7a3d55]"
                 >
                   {item.label}
                 </a>
@@ -83,29 +109,29 @@ export default function Home() {
 
       <main id="top" className="relative pt-20">
         <section className="relative mx-auto max-w-6xl px-5 pb-10 pt-10 md:px-8 md:pt-14">
-          <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[#e8b4c8]">
-            Commercial ethnic fashion stock
+          <p className="mb-3 text-xs uppercase tracking-[0.28em] text-[#c46b8c]">
+            Soft glam ethnic fashion stock
           </p>
-          <h1 className="max-w-3xl text-3xl font-medium leading-tight md:text-5xl">
-            Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
+          <h1 className="max-w-3xl font-serif text-3xl font-medium leading-tight text-[#5c3144] md:text-5xl">
+            Feminine Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
           </h1>
-          <p className="mt-5 max-w-2xl text-base text-[#9a9188] md:text-lg">
-            Scroll the gallery. As you go deeper, the frames soften and unlock the full commercial library on Gumroad.
+          <p className="mt-5 max-w-2xl text-base text-[#8a5a6c] md:text-lg">
+            Scroll through a longer gallery first. Farther down, the frames soften and open the full commercial library on Gumroad.
           </p>
         </section>
 
-        <section id="gallery" className="relative mx-auto max-w-6xl px-5 pb-28 md:px-8">
+        <section id="gallery" className="relative mx-auto max-w-6xl px-5 pb-36 md:px-8">
           <div
             className="columns-1 gap-4 sm:columns-2 lg:columns-3"
             style={{
               filter: `blur(${blurPx}px)`,
-              transition: "filter 120ms linear",
+              transition: "filter 140ms linear",
             }}
           >
-            {GALLERY.map((shot) => (
+            {GALLERY.map((shot, index) => (
               <figure
                 key={shot.src}
-                className="mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-white/10 bg-[#121214]"
+                className="mb-4 break-inside-avoid overflow-hidden rounded-[1.4rem] border border-[#e8b4c8]/40 bg-white/70 shadow-[0_10px_30px_rgba(122,61,85,0.08)]"
               >
                 <Image
                   src={shot.src}
@@ -114,33 +140,33 @@ export default function Home() {
                   height={1600}
                   className="h-auto w-full object-cover"
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                  priority={shot.src.endsWith("01.jpg")}
+                  priority={index < 3}
                 />
               </figure>
             ))}
           </div>
 
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 top-24 bg-gradient-to-b from-transparent via-[#0a0a0b]/40 to-[#0a0a0b]"
+            className="pointer-events-none absolute inset-x-0 bottom-0 top-[35%] bg-gradient-to-b from-transparent via-[#fff7fb]/55 to-[#fff7fb]"
             style={{ opacity: veil }}
             aria-hidden
           />
 
           <div
-            className={`sticky bottom-8 z-40 mx-auto mt-[-8rem] max-w-xl px-2 transition-all duration-300 ${
+            className={`sticky bottom-8 z-40 mx-auto mt-[-10rem] max-w-xl px-2 transition-all duration-300 ${
               gateVisible
                 ? "translate-y-0 opacity-100"
                 : "pointer-events-none translate-y-6 opacity-0"
             }`}
           >
-            <div className="rounded-3xl border border-white/15 bg-[#141416]/92 p-6 shadow-2xl shadow-black/50 backdrop-blur-xl md:p-8">
-              <p className="text-xs uppercase tracking-[0.24em] text-[#e8b4c8]">
+            <div className="rounded-[1.75rem] border border-[#e8b4c8]/55 bg-[#fffafc]/95 p-6 shadow-[0_20px_50px_rgba(122,61,85,0.18)] backdrop-blur-xl md:p-8">
+              <p className="text-xs uppercase tracking-[0.24em] text-[#c46b8c]">
                 Unlock more
               </p>
-              <h2 className="mt-3 text-2xl font-medium md:text-3xl">
+              <h2 className="mt-3 font-serif text-2xl font-medium text-[#5c3144] md:text-3xl">
                 The rest of the library opens on Gumroad.
               </h2>
-              <p className="mt-3 text-sm leading-relaxed text-[#b7aea4] md:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-[#8a5a6c] md:text-base">
                 Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content. CAD $29.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -148,7 +174,7 @@ export default function Home() {
                   href={GUMROAD_HERO}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full bg-[#f5f0ea] px-5 py-3 text-sm font-semibold text-[#0a0a0b] transition hover:bg-white"
+                  className="inline-flex items-center justify-center rounded-full bg-[#c46b8c] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#b35a7c]"
                 >
                   Unlock full library
                 </a>
@@ -156,7 +182,7 @@ export default function Home() {
                   href={GUMROAD_ENTRY}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex items-center justify-center rounded-full border border-white/20 px-5 py-3 text-sm text-[#f5f0ea] transition hover:border-white/40"
+                  className="inline-flex items-center justify-center rounded-full border border-[#e8b4c8] bg-white/70 px-5 py-3 text-sm text-[#7a3d55] transition hover:border-[#c46b8c]"
                 >
                   Start with faces pack
                 </a>
@@ -165,46 +191,46 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="packs" className="border-t border-white/10 bg-[#0f0f11]">
+        <section id="packs" className="border-t border-[#e8b4c8]/35 bg-[#ffeaf2]/55">
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-16 md:grid-cols-3 md:px-8">
-            <article className="rounded-2xl border border-white/10 bg-[#141416] p-6">
-              <h3 className="text-lg font-medium">Lifestyle bundle</h3>
-              <p className="mt-2 text-sm text-[#9a9188]">
+            <article className="rounded-[1.4rem] border border-[#e8b4c8]/45 bg-white/80 p-6 shadow-sm">
+              <h3 className="font-serif text-lg font-medium text-[#5c3144]">Lifestyle bundle</h3>
+              <p className="mt-2 text-sm text-[#8a5a6c]">
                 864 ethnic fashion and lifestyle frames. Best mid tier for campaigns. CAD $29.
               </p>
               <a
                 href={GUMROAD_HERO}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-block text-sm text-[#e8b4c8] hover:text-white"
+                className="mt-4 inline-block text-sm text-[#c46b8c] hover:text-[#7a3d55]"
               >
                 Open on Gumroad
               </a>
             </article>
-            <article className="rounded-2xl border border-white/10 bg-[#141416] p-6">
-              <h3 className="text-lg font-medium">Portrait faces</h3>
-              <p className="mt-2 text-sm text-[#9a9188]">
+            <article className="rounded-[1.4rem] border border-[#e8b4c8]/45 bg-white/80 p-6 shadow-sm">
+              <h3 className="font-serif text-lg font-medium text-[#5c3144]">Portrait faces</h3>
+              <p className="mt-2 text-sm text-[#8a5a6c]">
                 Smaller entry pack for a first commercial test. CAD $19.
               </p>
               <a
                 href={GUMROAD_ENTRY}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-block text-sm text-[#e8b4c8] hover:text-white"
+                className="mt-4 inline-block text-sm text-[#c46b8c] hover:text-[#7a3d55]"
               >
                 Open on Gumroad
               </a>
             </article>
-            <article className="rounded-2xl border border-white/10 bg-[#141416] p-6">
-              <h3 className="text-lg font-medium">Full shop</h3>
-              <p className="mt-2 text-sm text-[#9a9188]">
+            <article className="rounded-[1.4rem] border border-[#e8b4c8]/45 bg-white/80 p-6 shadow-sm">
+              <h3 className="font-serif text-lg font-medium text-[#5c3144]">Full shop</h3>
+              <p className="mt-2 text-sm text-[#8a5a6c]">
                 Browse every EthnicMuse World pack in one place.
               </p>
               <a
                 href={GUMROAD_HOME}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-4 inline-block text-sm text-[#e8b4c8] hover:text-white"
+                className="mt-4 inline-block text-sm text-[#c46b8c] hover:text-[#7a3d55]"
               >
                 Visit shop
               </a>
@@ -213,15 +239,15 @@ export default function Home() {
         </section>
 
         <section id="license" className="mx-auto max-w-6xl px-5 py-16 md:px-8">
-          <h2 className="text-2xl font-medium md:text-3xl">License in plain words</h2>
-          <p className="mt-4 max-w-3xl text-[#b7aea4]">
+          <h2 className="font-serif text-2xl font-medium text-[#5c3144] md:text-3xl">License in plain words</h2>
+          <p className="mt-4 max-w-3xl text-[#8a5a6c]">
             Commercial license included for ads, websites, social, lookbooks, and client work under standard EthnicMuse terms. You cannot resell the files as a competing stock pack or claim the people are real models you photographed. Images are AI generated ethnic fashion stock curated for creative use.
           </p>
         </section>
       </main>
 
-      <footer className="border-t border-white/10 py-8 text-center text-sm text-[#7d766e]">
-        EthnicMuse World. Commercial ethnic fashion stock.
+      <footer className="border-t border-[#e8b4c8]/35 py-8 text-center text-sm text-[#9a6a7c]">
+        EthnicMuse World. Soft glam commercial ethnic fashion stock.
       </footer>
     </div>
   );

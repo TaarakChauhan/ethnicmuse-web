@@ -163,19 +163,17 @@ export default function Home() {
   const gateVisible = progress > 0.18;
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#fff5f8] text-[#4a1530]">
-      <div className="pointer-events-none fixed inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_#ffd6e7_0%,_#fff5f8_42%,_#fce4ec_100%)]" />
-
-      <header className="fixed inset-x-0 top-0 z-50 border-b border-[#c2185b]/20 bg-[#fff5f8]/88 backdrop-blur-md">
+    <div className="min-h-screen overflow-x-hidden bg-[#ffffff] text-[#1d1d1f]">
+      <header className="sticky inset-x-0 top-0 z-50 border-b border-[#d2d2d7] bg-[#ffffff]/80 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-8 md:py-4">
           <a
             href="#top"
-            className="font-serif text-lg tracking-[0.18em] text-[#2d0a1a] md:text-2xl"
+            className="text-lg font-semibold tracking-tight text-[#1d1d1f] md:text-xl"
           >
             EthnicMuse
           </a>
 
-          <nav className="hidden items-center gap-x-10 text-[15px] text-[#7a3d55] md:flex">
+          <nav className="hidden items-center gap-x-10 text-[15px] text-[#86868b] md:flex">
             {NAV.map((item) =>
               item.href ? (
                 <a
@@ -183,7 +181,7 @@ export default function Home() {
                   href={item.href}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center transition hover:text-[#c2185b]"
+                  className="inline-flex min-h-11 items-center transition hover:text-[#1d1d1f]"
                 >
                   {item.label}
                 </a>
@@ -191,7 +189,7 @@ export default function Home() {
                 <a
                   key={item.id}
                   href={`#${item.id}`}
-                  className="inline-flex min-h-11 items-center transition hover:text-[#c2185b]"
+                  className="inline-flex min-h-11 items-center transition hover:text-[#1d1d1f]"
                 >
                   {item.label}
                 </a>
@@ -201,7 +199,7 @@ export default function Home() {
 
           <button
             type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#c2185b]/30 bg-white/70 text-[#2d0a1a] md:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f] md:hidden"
             aria-label={menuOpen ? "Close menu" : "Open menu"}
             aria-expanded={menuOpen}
             onClick={() => setMenuOpen((v) => !v)}
@@ -234,7 +232,7 @@ export default function Home() {
         </div>
 
         {menuOpen && (
-          <div className="border-t border-[#c2185b]/15 bg-[#fff5f8]/98 px-4 py-4 md:hidden">
+          <div className="border-t border-[#d2d2d7] bg-[#ffffff]/98 px-4 py-4 md:hidden">
             <nav className="flex flex-col gap-1">
               {NAV.map((item) =>
                 item.href ? (
@@ -243,7 +241,7 @@ export default function Home() {
                     href={item.href}
                     target="_blank"
                     rel="noreferrer"
-                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#4a1530] transition hover:bg-[#ffd6e7]/60"
+                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
@@ -252,7 +250,7 @@ export default function Home() {
                   <a
                     key={item.id}
                     href={`#${item.id}`}
-                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#4a1530] transition hover:bg-[#ffd6e7]/60"
+                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
@@ -264,28 +262,28 @@ export default function Home() {
         )}
       </header>
 
-      <main id="top" className="relative pt-[3.75rem] md:pt-20">
-        <section className="relative mx-auto max-w-6xl px-4 pb-8 pt-8 md:px-8 md:pb-12 md:pt-16">
-          <h1 className="max-w-3xl font-serif text-3xl font-medium leading-[1.15] tracking-tight text-[#2d0a1a] sm:text-4xl md:text-5xl lg:text-6xl">
+      <main id="top" className="relative">
+        <section className="relative mx-auto max-w-6xl px-4 pb-8 pt-10 md:px-8 md:pb-14 md:pt-20">
+          <h1 className="max-w-3xl text-3xl font-semibold leading-[1.15] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="md:hidden">
               Indian saree and ethnic lifestyle images for ads and brand campaigns.
             </span>
             <span className="hidden md:inline">
-              Feminine Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
+              Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
             </span>
           </h1>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href={GUMROAD_HERO}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#d81b60] px-6 py-3 text-sm font-semibold text-white shadow-[0_12px_32px_rgba(194,24,91,0.35)] transition hover:bg-[#c2185b]"
+              className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
               Unlock full library · CAD $29
             </a>
             <a
               href="#gallery"
-              className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#c2185b]/35 bg-white/80 px-6 py-3 text-sm font-medium text-[#4a1530] transition hover:border-[#d81b60] hover:text-[#c2185b]"
+              className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-6 py-3 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
             >
               Browse gallery
             </a>
@@ -306,7 +304,7 @@ export default function Home() {
             {GALLERY.map((shot, index) => (
               <figure
                 key={shot.src}
-                className="gallery-frame relative mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-[#c2185b]/18 bg-white/80 shadow-[0_14px_40px_rgba(45,10,26,0.12)] md:rounded-[1.6rem] md:shadow-[0_18px_48px_rgba(45,10,26,0.14)]"
+                className="gallery-frame relative mb-4 break-inside-avoid overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.06)] md:rounded-2xl md:shadow-[0_12px_36px_rgba(0,0,0,0.08)]"
                 onContextMenu={(event) => event.preventDefault()}
               >
                 <Image
@@ -329,7 +327,7 @@ export default function Home() {
           </div>
 
           <div
-            className="pointer-events-none absolute inset-x-0 bottom-0 top-[35%] bg-gradient-to-b from-transparent via-[#fff5f8]/55 to-[#fff5f8]"
+            className="pointer-events-none absolute inset-x-0 bottom-0 top-[35%] bg-gradient-to-b from-transparent via-[#ffffff]/55 to-[#ffffff]"
             style={{ opacity: veil }}
             aria-hidden
           />
@@ -341,14 +339,14 @@ export default function Home() {
                 : "pointer-events-none translate-y-6 opacity-0"
             }`}
           >
-            <div className="rounded-[1.75rem] border border-[#c2185b]/25 bg-[#fffafc]/95 p-8 shadow-[0_24px_60px_rgba(45,10,26,0.22)] backdrop-blur-xl">
-              <p className="text-xs uppercase tracking-[0.28em] text-[#d81b60]">
+            <div className="rounded-2xl border border-[#d2d2d7] bg-[#ffffff]/95 p-8 shadow-[0_24px_60px_rgba(0,0,0,0.12)] backdrop-blur-xl">
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
                 Unlock more
               </p>
-              <h2 className="mt-3 font-serif text-3xl font-medium text-[#2d0a1a]">
+              <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d1d1f]">
                 The rest of the library opens on Gumroad.
               </h2>
-              <p className="mt-3 text-base leading-relaxed text-[#7a3d55]">
+              <p className="mt-3 text-base leading-relaxed text-[#86868b]">
                 Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content. CAD $29.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -356,7 +354,7 @@ export default function Home() {
                   href={GUMROAD_HERO}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#d81b60] px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_28px_rgba(194,24,91,0.35)] transition hover:bg-[#c2185b]"
+                  className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
                   Unlock full library
                 </a>
@@ -364,7 +362,7 @@ export default function Home() {
                   href={GUMROAD_ENTRY}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#c2185b]/35 bg-white/80 px-5 py-3 text-sm text-[#4a1530] transition hover:border-[#d81b60]"
+                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-5 py-3 text-sm text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
                 >
                   Start with faces pack
                 </a>
@@ -373,55 +371,52 @@ export default function Home() {
           </div>
         </section>
 
-        <section
-          id="packs"
-          className="border-t border-[#c2185b]/18 bg-[#ffe0ec]/70"
-        >
+        <section id="packs" className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 px-4 py-14 md:grid-cols-3 md:gap-8 md:px-8 md:py-20">
-            <article className="rounded-2xl border border-[#c2185b]/20 bg-white/90 p-6 shadow-[0_12px_36px_rgba(45,10,26,0.1)] md:rounded-[1.5rem] md:p-7">
-              <h3 className="font-serif text-xl font-medium text-[#2d0a1a]">
+            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
                 Lifestyle bundle
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#7a3d55]">
+              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
                 864 ethnic fashion and lifestyle frames. Best mid tier for campaigns. CAD $29.
               </p>
               <a
                 href={GUMROAD_HERO}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#d81b60] transition hover:text-[#c2185b]"
+                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
               >
                 Open on Gumroad
               </a>
             </article>
-            <article className="rounded-2xl border border-[#c2185b]/20 bg-white/90 p-6 shadow-[0_12px_36px_rgba(45,10,26,0.1)] md:rounded-[1.5rem] md:p-7">
-              <h3 className="font-serif text-xl font-medium text-[#2d0a1a]">
+            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
                 Portrait faces
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#7a3d55]">
+              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
                 Smaller entry pack for a first commercial test. CAD $19.
               </p>
               <a
                 href={GUMROAD_ENTRY}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#d81b60] transition hover:text-[#c2185b]"
+                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
               >
                 Open on Gumroad
               </a>
             </article>
-            <article className="rounded-2xl border border-[#c2185b]/20 bg-white/90 p-6 shadow-[0_12px_36px_rgba(45,10,26,0.1)] md:rounded-[1.5rem] md:p-7">
-              <h3 className="font-serif text-xl font-medium text-[#2d0a1a]">
+            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
                 Full shop
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#7a3d55]">
+              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
                 Browse every EthnicMuse World pack in one place.
               </p>
               <a
                 href={GUMROAD_HOME}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#d81b60] transition hover:text-[#c2185b]"
+                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
               >
                 Visit shop
               </a>
@@ -433,17 +428,17 @@ export default function Home() {
           id="license"
           className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20"
         >
-          <h2 className="font-serif text-2xl font-medium text-[#2d0a1a] md:text-4xl">
+          <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
             License in plain words
           </h2>
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#7a3d55] md:text-base">
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
             Commercial license included for ads, websites, social, lookbooks, and client work under standard EthnicMuse terms. You cannot resell the files as a competing stock pack or claim the people are real models you photographed. Images are AI generated ethnic fashion stock curated for creative use.
           </p>
         </section>
       </main>
 
-      <footer className="border-t border-[#c2185b]/18 py-8 pb-28 text-center text-sm text-[#7a3d55] md:pb-10">
-        EthnicMuse World. Bold feminine commercial ethnic fashion stock.
+      <footer className="border-t border-[#d2d2d7] py-8 pb-28 text-center text-sm text-[#86868b] md:pb-10">
+        EthnicMuse World. Commercial ethnic fashion stock.
       </footer>
 
       <div
@@ -453,12 +448,12 @@ export default function Home() {
             : "pointer-events-none translate-y-full opacity-0"
         }`}
       >
-        <div className="border-t border-[#c2185b]/25 bg-[#fff5f8]/95 px-4 pt-3 shadow-[0_-12px_40px_rgba(45,10,26,0.18)] backdrop-blur-xl">
+        <div className="border-t border-[#d2d2d7] bg-[#ffffff]/95 px-4 pt-3 shadow-[0_-12px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl">
           <a
             href={GUMROAD_HERO}
             target="_blank"
             rel="noreferrer"
-            className="flex min-h-12 w-full items-center justify-between gap-3 rounded-2xl bg-[#d81b60] px-5 py-3 text-white shadow-[0_10px_28px_rgba(194,24,91,0.4)]"
+            className="flex min-h-12 w-full items-center justify-between gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
           >
             <span className="text-sm font-semibold tracking-wide">CAD $29</span>
             <span className="text-sm font-semibold">Unlock full library</span>

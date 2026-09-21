@@ -1,16 +1,20 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fff7fb;
-  --foreground: #4a2f3a;
-  --accent: #c46b8c;
-  --muted: #8a5a6c;
+  --background: #fff5f8;
+  --foreground: #4a1530;
+  --accent: #d81b60;
+  --accent-deep: #c2185b;
+  --plum: #2d0a1a;
+  --muted: #7a3d55;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
+  --font-serif: var(--font-playfair), "Iowan Old Style", "Palatino Linotype",
+    Palatino, Georgia, serif;
 }
 
 html {
@@ -20,11 +24,13 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-geist-sans), "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  overflow-x: hidden;
 }
 
 ::selection {
-  background: rgb(196 107 140 / 0.28);
+  background: rgb(216 27 96 / 0.28);
+  color: #2d0a1a;
 }
 
 .gallery-frame {
@@ -52,17 +58,21 @@ body {
   bottom: 0.7rem;
   z-index: 20;
   padding: 0.24rem 0.5rem;
-  border: 1px solid rgb(255 247 251 / 0.36);
+  border: 1px solid rgb(255 245 248 / 0.4);
   border-radius: 999px;
-  color: rgb(255 247 251 / 0.88);
-  background: rgb(122 61 85 / 0.24);
-  box-shadow: 0 2px 12px rgb(74 47 58 / 0.18);
+  color: rgb(255 245 248 / 0.92);
+  background: rgb(45 10 26 / 0.32);
+  box-shadow: 0 4px 16px rgb(45 10 26 / 0.28);
   backdrop-filter: blur(4px);
-  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, serif;
+  font-family: var(--font-playfair), Georgia, serif;
   font-size: 0.68rem;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.16em;
   line-height: 1;
   pointer-events: none;
-  text-shadow: 0 1px 5px rgb(74 47 58 / 0.72);
+  text-shadow: 0 1px 6px rgb(45 10 26 / 0.8);
   user-select: none;
+}
+
+.mobile-sticky-cta {
+  padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
 }

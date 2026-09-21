@@ -266,9 +266,6 @@ export default function Home() {
 
       <main id="top" className="relative pt-[3.75rem] md:pt-20">
         <section className="relative mx-auto max-w-6xl px-4 pb-8 pt-8 md:px-8 md:pb-12 md:pt-16">
-          <p className="mb-3 text-[11px] uppercase tracking-[0.32em] text-[#d81b60] md:text-xs">
-            Bold feminine ethnic fashion stock
-          </p>
           <h1 className="max-w-3xl font-serif text-3xl font-medium leading-[1.15] tracking-tight text-[#2d0a1a] sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="md:hidden">
               Indian saree and ethnic lifestyle images for ads and brand campaigns.
@@ -277,14 +274,6 @@ export default function Home() {
               Feminine Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
             </span>
           </h1>
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#7a3d55] md:mt-6 md:text-lg">
-            <span className="md:hidden">
-              Scroll the gallery. Farther down, frames soften and the full commercial library opens on Gumroad.
-            </span>
-            <span className="hidden md:inline">
-              Scroll through a longer gallery first. Farther down, the frames soften and open the full commercial library on Gumroad.
-            </span>
-          </p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
               href={GUMROAD_HERO}

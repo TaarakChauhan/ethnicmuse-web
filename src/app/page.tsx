@@ -279,7 +279,7 @@ export default function Home() {
               rel="noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
-              Unlock full library · CAD $29
+              Shop now
             </a>
             <a
               href="#gallery"
@@ -347,7 +347,7 @@ export default function Home() {
                 The rest of the library opens on Gumroad.
               </h2>
               <p className="mt-3 text-base leading-relaxed text-[#86868b]">
-                Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content. CAD $29.
+                Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row">
                 <a
@@ -356,7 +356,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
-                  Unlock full library
+                  Shop now
                 </a>
                 <a
                   href={GUMROAD_ENTRY}
@@ -378,7 +378,7 @@ export default function Home() {
                 Lifestyle bundle
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                864 ethnic fashion and lifestyle frames. Best mid tier for campaigns. CAD $29.
+                864 ethnic fashion and lifestyle frames. Best mid tier for campaigns.
               </p>
               <a
                 href={GUMROAD_HERO}
@@ -394,7 +394,7 @@ export default function Home() {
                 Portrait faces
               </h3>
               <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                Smaller entry pack for a first commercial test. CAD $19.
+                Smaller entry pack for a first commercial test.
               </p>
               <a
                 href={GUMROAD_ENTRY}
@@ -453,10 +453,9 @@ export default function Home() {
             href={GUMROAD_HERO}
             target="_blank"
             rel="noreferrer"
-            className="flex min-h-12 w-full items-center justify-between gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
+            className="flex min-h-12 w-full items-center justify-center gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
           >
-            <span className="text-sm font-semibold tracking-wide">CAD $29</span>
-            <span className="text-sm font-semibold">Unlock full library</span>
+            <span className="text-sm font-semibold">Shop now</span>
           </a>
         </div>
       </div>

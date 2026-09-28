@@ -269,20 +269,22 @@ export default function Home() {
                 272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
               </p>
               <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$9.99</p>
-              <a
-                href="/portraits"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
-              >
-                View the pack
-              </a>
-              <a
-                href={GUMROAD_PORTRAITS}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-1 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
-              >
-                Buy on Gumroad
-              </a>
+              <div className="mt-5 flex flex-col items-start gap-1">
+                <a
+                  href="/portraits"
+                  className="inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
+                >
+                  View the pack
+                </a>
+                <a
+                  href={GUMROAD_PORTRAITS}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+                >
+                  Buy on Gumroad
+                </a>
+              </div>
             </article>
             <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
               <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">

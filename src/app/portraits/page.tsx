@@ -100,14 +100,14 @@ export default function PortraitsPage() {
             </div>
 
             <div
-              className="relative overflow-hidden rounded-3xl border border-[#e8e8ed] bg-[#f5f5f7] shadow-[0_16px_50px_rgba(0,0,0,0.1)]"
+              className="relative aspect-[16/10] overflow-hidden rounded-3xl border border-[#e8e8ed] bg-[#f5f5f7] shadow-[0_16px_50px_rgba(0,0,0,0.1)]"
             >
               <Image
                 src="/portraits/cover.jpg"
                 alt="EthnicMuse Saree Portrait Pack cover"
-                width={1200}
-                height={1200}
-                className="h-auto w-full select-none"
+                fill
+                className="object-cover select-none"
+                sizes="(max-width: 768px) 100vw, 45vw"
                 priority
               />
               <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[#1d1d1f]/25 via-transparent to-transparent" />
@@ -138,7 +138,7 @@ export default function PortraitsPage() {
               {PREVIEWS.map((preview, index) => (
                 <figure
                   key={preview.src}
-                  className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.06)]"
+                  className="relative aspect-[3/2] overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.06)]"
                     >
                   <Image
                     src={preview.src}

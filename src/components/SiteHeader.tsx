@@ -22,8 +22,8 @@ export default function SiteHeader() {
   const NAV: NavItem[] = [
     { label: "Gallery", href: section("gallery") },
     { label: "Packs", href: section("packs") },
-    { label: "Prompt PDFs", href: "/prompts" },
-    { label: "Portrait Pack", href: "/portraits" },
+    { label: "Prompts", href: "/prompts" },
+    { label: "Portraits", href: "/portraits" },
     { label: "License", href: section("license") },
     { label: "Shop", href: GUMROAD_HERO, external: true },
   ];
@@ -55,7 +55,7 @@ export default function SiteHeader() {
           EthnicMuse
         </a>
 
-        <nav className="hidden items-center gap-x-10 text-[15px] text-[#86868b] md:flex">
+        <nav className="hidden items-center gap-x-5 text-[14px] text-[#86868b] lg:flex xl:gap-x-8 xl:text-[15px]">
           {NAV.map((item) => (
             <a
               key={item.label}
@@ -74,7 +74,7 @@ export default function SiteHeader() {
 
         <button
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f] md:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f] lg:hidden"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
@@ -107,7 +107,7 @@ export default function SiteHeader() {
       </div>
 
       {menuOpen && (
-        <div className="border-t border-[#d2d2d7] bg-[#ffffff]/98 px-4 py-4 md:hidden">
+        <div className="border-t border-[#d2d2d7] bg-[#ffffff]/98 px-4 py-4 lg:hidden">
           <nav className="flex flex-col gap-1">
             {NAV.map((item) => (
               <a

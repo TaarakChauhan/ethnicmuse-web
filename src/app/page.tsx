@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import SiteHeader from "@/components/SiteHeader";
 
 const GUMROAD_HERO =
   "https://ethnicmuse.gumroad.com/l/EthnicMuseWorldLifestyleEthnicStockBundle";
@@ -112,16 +113,8 @@ const GALLERY = [
   { src: "/gallery/gallery-100.jpg", alt: "Feminine Indian fashion look" },
 ];
 
-const NAV = [
-  { id: "gallery", label: "Gallery" },
-  { id: "packs", label: "Packs" },
-  { id: "license", label: "License" },
-  { id: "shop", label: "Shop", href: GUMROAD_HERO },
-];
-
 export default function Home() {
   const [progress, setProgress] = useState(0);
-  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -145,123 +138,13 @@ export default function Home() {
     };
   }, []);
 
-  useEffect(() => {
-    if (!menuOpen) return;
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setMenuOpen(false);
-    };
-    document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", onKey);
-    return () => {
-      document.body.style.overflow = "";
-      window.removeEventListener("keydown", onKey);
-    };
-  }, [menuOpen]);
-
   const blurPx = useMemo(() => Math.round(progress * 16), [progress]);
   const veil = useMemo(() => Math.min(0.82, progress * 1.05), [progress]);
   const gateVisible = progress > 0.18;
 
   return (
     <div className="min-h-screen overflow-x-hidden bg-[#ffffff] text-[#1d1d1f]">
-      <header className="sticky inset-x-0 top-0 z-50 border-b border-[#d2d2d7] bg-[#ffffff]/80 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-8 md:py-4">
-          <a
-            href="#top"
-            className="text-lg font-semibold tracking-tight text-[#1d1d1f] md:text-xl"
-          >
-            EthnicMuse
-          </a>
-
-          <nav className="hidden items-center gap-x-10 text-[15px] text-[#86868b] md:flex">
-            {NAV.map((item) =>
-              item.href ? (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex min-h-11 items-center transition hover:text-[#1d1d1f]"
-                >
-                  {item.label}
-                </a>
-              ) : (
-                <a
-                  key={item.id}
-                  href={`#${item.id}`}
-                  className="inline-flex min-h-11 items-center transition hover:text-[#1d1d1f]"
-                >
-                  {item.label}
-                </a>
-              ),
-            )}
-          </nav>
-
-          <button
-            type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f] md:hidden"
-            aria-label={menuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((v) => !v)}
-          >
-            <span className="sr-only">{menuOpen ? "Close" : "Menu"}</span>
-            <svg
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              aria-hidden
-            >
-              {menuOpen ? (
-                <>
-                  <path d="M6 6l12 12" />
-                  <path d="M18 6L6 18" />
-                </>
-              ) : (
-                <>
-                  <path d="M4 7h16" />
-                  <path d="M4 12h16" />
-                  <path d="M4 17h16" />
-                </>
-              )}
-            </svg>
-          </button>
-        </div>
-
-        {menuOpen && (
-          <div className="border-t border-[#d2d2d7] bg-[#ffffff]/98 px-4 py-4 md:hidden">
-            <nav className="flex flex-col gap-1">
-              {NAV.map((item) =>
-                item.href ? (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ) : (
-                  <a
-                    key={item.id}
-                    href={`#${item.id}`}
-                    className="inline-flex min-h-11 items-center rounded-xl px-3 text-base text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {item.label}
-                  </a>
-                ),
-              )}
-            </nav>
-          </div>
-        )}
-      </header>
-
+      <SiteHeader />
       <main id="top" className="relative">
         <section className="relative mx-auto max-w-6xl px-4 pb-8 pt-10 md:px-8 md:pb-14 md:pt-20">
           <h1 className="max-w-3xl text-3xl font-semibold leading-[1.15] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-6xl">

@@ -9,6 +9,8 @@ const GUMROAD_HERO =
 const GUMROAD_ENTRY =
   "https://ethnicmuse.gumroad.com/l/SareePortraitFacesPack";
 const GUMROAD_HOME = "https://ethnicmuse.gumroad.com";
+const GUMROAD_PORTRAITS =
+  "https://ethnicmuse.gumroad.com/l/EthnicMuseSareePortraitPack";
 
 const GALLERY = [
   { src: "/gallery/gallery-01.jpg", alt: "Evening glam saree portrait" },
@@ -255,7 +257,33 @@ export default function Home() {
         </section>
 
         <section id="packs" className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 px-4 py-14 md:grid-cols-3 md:gap-8 md:px-8 md:py-20">
+          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 px-4 py-14 md:grid-cols-2 md:gap-6 md:px-8 md:py-20 lg:grid-cols-4">
+            <article className="rounded-2xl border border-[#1d1d1f] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.08)] md:p-7">
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#86868b]">
+                New
+              </p>
+              <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">
+                EthnicMuse Saree Portrait Pack
+              </h3>
+              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+                272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
+              </p>
+              <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$9.99</p>
+              <a
+                href="/portraits"
+                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
+              >
+                View the pack
+              </a>
+              <a
+                href={GUMROAD_PORTRAITS}
+                target="_blank"
+                rel="noreferrer"
+                className="mt-1 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+              >
+                Buy on Gumroad
+              </a>
+            </article>
             <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
               <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
                 Lifestyle bundle

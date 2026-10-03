@@ -170,7 +170,7 @@ export default function Home() {
               rel="noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
-              Shop Lifestyle
+              Shop Lifestyle stills
             </a>
             <a
               href="#gallery"
@@ -247,7 +247,7 @@ export default function Home() {
                   rel="noreferrer"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
-                  Shop Lifestyle
+                  Shop Lifestyle stills
                 </a>
                 <a
                   href={GUMROAD_ENTRY}
@@ -274,7 +274,7 @@ export default function Home() {
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
                 864 ethnic fashion and lifestyle frames. Best mid tier for campaigns.
               </p>
-              <p className="mt-5 text-3xl font-semibold tracking-tight">$29</p>
+              <p className="mt-5 text-3xl font-semibold tracking-tight">$29 USD</p>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/75">
                 For Shopify product pages, collection grids, Meta ads, and lookbooks.
               </p>
@@ -284,7 +284,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
               >
-                Shop Lifestyle
+                Buy Lifestyle stills
               </a>
             </article>
 
@@ -347,6 +347,24 @@ export default function Home() {
                 </a>
               </article>
             </div>
+
+            <p className="mt-8 text-center text-sm text-[#86868b]">
+              Also browse{" "}
+              <a
+                href="/portraits"
+                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
+              >
+                Portraits
+              </a>{" "}
+              and{" "}
+              <a
+                href="/prompts"
+                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
+              >
+                Prompts
+              </a>
+              .
+            </p>
           </div>
         </section>
 
@@ -383,7 +401,7 @@ export default function Home() {
             rel="noreferrer"
             className="mx-auto flex min-h-12 w-full max-w-xl items-center justify-center gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
           >
-            <span className="text-sm font-semibold">Shop Lifestyle</span>
+            <span className="text-sm font-semibold">Shop Lifestyle stills</span>
           </a>
         </div>
       </div>

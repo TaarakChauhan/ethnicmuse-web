@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
@@ -290,9 +291,7 @@ export default function PromptsPage() {
         </section>
       </main>
 
-      <footer className="border-t border-[#d2d2d7] py-8 text-center text-sm text-[#86868b]">
-        EthnicMuse World. Prompt PDFs for saree stock photography.
-      </footer>
+      <SiteFooter note="EthnicMuse World. Prompt PDFs for saree stock photography." />
     </div>
   );
 }

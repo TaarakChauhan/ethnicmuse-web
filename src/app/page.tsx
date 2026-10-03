@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
+import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
 const GUMROAD_HERO =
@@ -117,6 +118,7 @@ const GALLERY = [
 
 export default function Home() {
   const [progress, setProgress] = useState(0);
+  const [shopBar, setShopBar] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -130,6 +132,7 @@ export default function Home() {
       const span = isMobile ? 0.72 : 0.78;
       const raw = window.scrollY / (max * (isMobile ? 0.85 : 0.78));
       setProgress(Math.min(1, Math.max(0, (raw - startAt) / span)));
+      setShopBar(window.scrollY > 160);
     };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -157,18 +160,21 @@ export default function Home() {
               Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
             </span>
           </h1>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+          <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#86868b] md:text-base">
+            For Shopify product pages, collection grids, Meta ads, and lookbooks.
+          </p>
+          <div className="mt-8 flex flex-col items-start gap-4">
             <a
               href={GUMROAD_HERO}
               target="_blank"
               rel="noreferrer"
               className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
             >
-              Shop now
+              Shop Lifestyle
             </a>
             <a
               href="#gallery"
-              className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-6 py-3 text-sm font-medium text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
+              className="text-sm text-[#86868b] underline decoration-[#d2d2d7] underline-offset-4 transition hover:text-[#1d1d1f]"
             >
               Browse gallery
             </a>
@@ -234,20 +240,20 @@ export default function Home() {
               <p className="mt-3 text-base leading-relaxed text-[#86868b]">
                 Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content.
               </p>
-              <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-6 flex flex-col items-start gap-3">
                 <a
                   href={GUMROAD_HERO}
                   target="_blank"
                   rel="noreferrer"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
-                  Shop now
+                  Shop Lifestyle
                 </a>
                 <a
                   href={GUMROAD_ENTRY}
                   target="_blank"
                   rel="noreferrer"
-                  className="inline-flex min-h-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white px-5 py-3 text-sm text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
+                  className="text-sm text-[#86868b] underline decoration-[#d2d2d7] underline-offset-4 transition hover:text-[#1d1d1f]"
                 >
                   Start with faces pack
                 </a>
@@ -257,83 +263,90 @@ export default function Home() {
         </section>
 
         <section id="packs" className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-5 px-4 py-14 md:grid-cols-2 md:gap-6 md:px-8 md:py-20 lg:grid-cols-4">
-            <article className="rounded-2xl border border-[#1d1d1f] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.08)] md:p-7">
-              <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#86868b]">
-                New
+          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+            <article className="rounded-3xl border border-[#1d1d1f] bg-[#1d1d1f] p-7 text-white shadow-[0_18px_50px_rgba(0,0,0,0.18)] md:p-10">
+              <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/70">
+                Featured
               </p>
-              <h3 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                EthnicMuse Saree Portrait Pack
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
-              </p>
-              <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$9.99</p>
-              <div className="mt-5 flex flex-col items-start gap-1">
-                <a
-                  href="/portraits"
-                  className="inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
-                >
-                  View the pack
-                </a>
-                <a
-                  href={GUMROAD_PORTRAITS}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
-                >
-                  Buy on Gumroad
-                </a>
-              </div>
-            </article>
-            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
+              <h3 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
                 Lifestyle bundle
               </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
                 864 ethnic fashion and lifestyle frames. Best mid tier for campaigns.
+              </p>
+              <p className="mt-5 text-3xl font-semibold tracking-tight">$29</p>
+              <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/75">
+                For Shopify product pages, collection grids, Meta ads, and lookbooks.
               </p>
               <a
                 href={GUMROAD_HERO}
                 target="_blank"
                 rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
+                className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
               >
-                Open on Gumroad
+                Shop Lifestyle
               </a>
             </article>
-            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                Portrait faces
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                Smaller entry pack for a first commercial test.
-              </p>
-              <a
-                href={GUMROAD_ENTRY}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
-              >
-                Open on Gumroad
-              </a>
-            </article>
-            <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-              <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                Full shop
-              </h3>
-              <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                Browse every EthnicMuse World pack in one place.
-              </p>
-              <a
-                href={GUMROAD_HOME}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-5 inline-flex min-h-11 items-center text-sm font-semibold text-[#0071e3] transition hover:opacity-80"
-              >
-                Visit shop
-              </a>
-            </article>
+
+            <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
+              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
+                  EthnicMuse Saree Portrait Pack
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+                  272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
+                </p>
+                <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$9.99</p>
+                <div className="mt-5 flex flex-col items-start gap-1">
+                  <a
+                    href="/portraits"
+                    className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+                  >
+                    View the pack
+                  </a>
+                  <a
+                    href={GUMROAD_PORTRAITS}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+                  >
+                    Buy on Gumroad
+                  </a>
+                </div>
+              </article>
+              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
+                  Portrait faces
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+                  Smaller entry pack for a first commercial test.
+                </p>
+                <a
+                  href={GUMROAD_ENTRY}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+                >
+                  Open on Gumroad
+                </a>
+              </article>
+              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
+                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
+                  Full shop
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+                  Browse every EthnicMuse World pack in one place.
+                </p>
+                <a
+                  href={GUMROAD_HOME}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-5 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+                >
+                  Visit shop
+                </a>
+              </article>
+            </div>
           </div>
         </section>
 
@@ -350,15 +363,17 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t border-[#d2d2d7] py-8 pb-28 text-center text-sm text-[#86868b] md:pb-10">
-        EthnicMuse World. Commercial ethnic fashion stock.
-      </footer>
+      <SiteFooter className="pb-28 md:pb-24" />
 
       <div
-        className={`fixed inset-x-0 bottom-0 z-50 mobile-sticky-cta transition-all duration-300 md:hidden ${
-          gateVisible
+        className={`fixed inset-x-0 bottom-0 z-50 mobile-sticky-cta transition-all duration-300 ${
+          shopBar
             ? "translate-y-0 opacity-100"
             : "pointer-events-none translate-y-full opacity-0"
+        } ${
+          gateVisible
+            ? "md:pointer-events-none md:translate-y-full md:opacity-0"
+            : ""
         }`}
       >
         <div className="border-t border-[#d2d2d7] bg-[#ffffff]/95 px-4 pt-3 shadow-[0_-12px_40px_rgba(0,0,0,0.08)] backdrop-blur-xl">
@@ -366,9 +381,9 @@ export default function Home() {
             href={GUMROAD_HERO}
             target="_blank"
             rel="noreferrer"
-            className="flex min-h-12 w-full items-center justify-center gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
+            className="mx-auto flex min-h-12 w-full max-w-xl items-center justify-center gap-3 rounded-2xl bg-[#1d1d1f] px-5 py-3 text-white transition hover:bg-black"
           >
-            <span className="text-sm font-semibold">Shop now</span>
+            <span className="text-sm font-semibold">Shop Lifestyle</span>
           </a>
         </div>
       </div>

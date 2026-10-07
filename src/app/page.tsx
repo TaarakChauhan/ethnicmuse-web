@@ -355,13 +355,20 @@ export default function Home() {
                 className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
               >
                 Portraits
-              </a>{" "}
-              and{" "}
+              </a>
+              ,{" "}
               <a
                 href="/prompts"
                 className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
               >
                 Prompts
+              </a>
+              , and the{" "}
+              <a
+                href="/saree-stock-photos-for-shopify"
+                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
+              >
+                saree stock guide for Shopify
               </a>
               .
             </p>

@@ -22,6 +22,7 @@ export default function SiteHeader() {
   const NAV: NavItem[] = [
     { label: "Gallery", href: section("gallery") },
     { label: "Packs", href: section("packs") },
+    { label: "Prompts", href: "/prompts" },
     { label: "License", href: section("license") },
     { label: "Shop", href: GUMROAD_HERO, external: true },
   ];

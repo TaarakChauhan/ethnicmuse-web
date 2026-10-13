@@ -274,7 +274,7 @@ export default function Home() {
               <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
                 864 ethnic fashion and lifestyle frames. Best mid tier for campaigns.
               </p>
-              <p className="mt-5 text-3xl font-semibold tracking-tight">$29 USD</p>
+              <p className="mt-5 text-3xl font-semibold tracking-tight">$14.99 USD</p>
               <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/75">
                 For Shopify product pages, collection grids, Meta ads, and lookbooks.
               </p>
@@ -296,7 +296,7 @@ export default function Home() {
                 <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
                   272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
                 </p>
-                <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$9.99</p>
+                <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$7.99</p>
                 <div className="mt-5 flex flex-col items-start gap-1">
                   <a
                     href="/portraits"

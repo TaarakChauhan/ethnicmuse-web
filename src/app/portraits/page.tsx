@@ -86,7 +86,7 @@ export default function PortraitsPage() {
                   rel="noreferrer"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
-                  Get the pack for $9.99
+                  Get the pack for $7.99
                 </a>
                 <a
                   href="#previews"
@@ -225,7 +225,7 @@ export default function PortraitsPage() {
               Bring more saree beauty to your next piece of content.
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#86868b] md:text-base">
-              Get 272 commercial JPEG portraits for $9.99. Download the pack
+              Get 272 commercial JPEG portraits for $7.99. Download the pack
               on Gumroad and start creating.
             </p>
             <a

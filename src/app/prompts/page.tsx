@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const GUMROAD_HOME = "https://ethnicmuse.gumroad.com";
 const VOLUME_1 = {
   title: "Saree Stock Photography",
-  price: "$9 USD",
+  price: "$4.99 USD",
   url: "https://ethnicmuse.gumroad.com/l/baemqv",
   badge: "Volume 1 · Prompts 1 to 1000",
   cover: "/prompts/saree-prompts-1000-cover.png",
@@ -27,12 +27,12 @@ const VOLUME_1 = {
     "Instant download on Gumroad",
   ],
   cta: "Buy Volume 1 on Gumroad →",
-  button: "Get Volume 1 · $9",
+  button: "Get Volume 1 · $4.99",
 };
 
 const VOLUME_2 = {
   title: "Saree Stock Photography (Prompts 1000 to 1999)",
-  price: "$9 USD",
+  price: "$4.99 USD",
   url: "https://ethnicmuse.gumroad.com/l/zkpqe",
   badge: "Volume 2 · Prompts 1000 to 1999",
   cover: "/prompts/saree-prompts-1000-1999-cover.png",
@@ -47,7 +47,7 @@ const VOLUME_2 = {
     "Instant download on Gumroad",
   ],
   cta: "Buy Volume 2 on Gumroad →",
-  button: "Get Volume 2 · $9",
+  button: "Get Volume 2 · $4.99",
 };
 
 const FOR_WHOM = [
@@ -191,7 +191,7 @@ export default function PromptsPage() {
               <ProductCard product={VOLUME_2} />
             </div>
             <p className="mt-8 text-center text-sm text-[#86868b] md:text-base">
-              Need two thousand prompts? Grab both volumes. $9 each.
+              Need two thousand prompts? Grab both volumes. $4.99 each.
             </p>
           </div>
         </section>

@@ -88,7 +88,7 @@ export default function SareeStockPhotosForShopifyPage() {
               Shop Lifestyle stills
             </a>
             <p className="text-sm text-[#86868b]">
-              864 commercial JPEGs. $29 USD. Instant Gumroad download.
+              864 commercial JPEGs. $14.99 USD. Instant Gumroad download.
             </p>
           </div>
         </section>
@@ -103,7 +103,7 @@ export default function SareeStockPhotosForShopifyPage() {
                 },
                 {
                   label: "Price",
-                  value: "$29 USD",
+                  value: "$14.99 USD",
                 },
                 {
                   label: "Built for",
@@ -168,7 +168,7 @@ export default function SareeStockPhotosForShopifyPage() {
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
               864 commercial ethnic fashion and lifestyle JPEGs for product
               pages, collection grids, lookbooks, and Meta ads. One clear
-              commercial license. $29 USD on Gumroad.
+              commercial license. $14.99 USD on Gumroad.
             </p>
             <a
               href={LIFESTYLE_URL}
@@ -186,7 +186,7 @@ export default function SareeStockPhotosForShopifyPage() {
                 rel="noreferrer"
                 className="underline decoration-white/25 underline-offset-4 transition hover:text-white hover:decoration-white/60"
               >
-                Portrait Pack for $9.99
+                Portrait Pack for $7.99
               </a>
               {" "}
               stays available as a quiet option.

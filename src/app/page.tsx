@@ -86,7 +86,7 @@ const GALLERY = [
   { src: "/gallery/gallery-70.jpg", alt: "Saree fashion look with soft light" },
   { src: "/gallery/gallery-71.jpg", alt: "Graceful ethnic portrait for brands" },
   { src: "/gallery/gallery-72.jpg", alt: "Gold detail saree fashion look" },
-  { src: "/gallery/gallery-101.jpg", alt: "Grey silk saree studio portrait" },
+  { src: "/gallery/gallery-102.jpg", alt: "Woman in a marigold silk saree holding a diya at a festive rooftop" },
   { src: "/gallery/gallery-74.jpg", alt: "Colorful Indian fashion portrait" },
   { src: "/gallery/gallery-75.jpg", alt: "Refined silk saree beauty look" },
   { src: "/gallery/gallery-76.jpg", alt: "Indian ethnic fashion portrait" },

@@ -53,6 +53,19 @@ export default async function BlogPostPage({ params }: Props) {
                       {p}
                     </p>
                   ))}
+                  {section.source && (
+                    <p className="text-sm text-[#86868b]">
+                      Source:{" "}
+                      <a
+                        href={section.source.href}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="underline hover:text-[#1d1d1f]"
+                      >
+                        {section.source.label}
+                      </a>
+                    </p>
+                  )}
                 </div>
               </section>
             ))}

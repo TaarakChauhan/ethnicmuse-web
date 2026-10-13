@@ -1,4 +1,8 @@
-export type BlogSection = { heading?: string; paragraphs: string[] };
+export type BlogSection = {
+  heading?: string;
+  paragraphs: string[];
+  source?: { label: string; href: string };
+};
 
 export type BlogPost = {
   slug: string;
@@ -202,9 +206,13 @@ export const POSTS: BlogPost[] = [
         paragraphs: [
           "AI images have become good enough that many people cannot tell them apart from photos. That is exactly why disclosure matters. Customers who find out later that an image was AI generated, and was not labelled, often feel tricked, even if nothing else was wrong.",
           "Disclosure does not have to be awkward. A small line in a banner caption, such as \"Illustrative AI generated image\", is enough on a website. A note in your About page or FAQ that explains you use AI generated lifestyle images for campaigns, and real photos for products, builds trust rather than losing it.",
-          "Platforms are also moving in this direction. Meta, for example, has published guidance about labelling AI generated or edited content in ads and posts. Rules change often, so check the current policy for each platform where you advertise.",
+          "Platforms are also moving in this direction. Meta, for example, explains in its Help Center that ad images created or edited with AI tools can carry an \"AI info\" label. Rules change often, so check the current policy for each platform where you advertise.",
           "We follow the same principle ourselves. Every EthnicMuse World image is AI generated, and we say so on our site and listings. The people in them are not real models, and the images depict adults only.",
         ],
+        source: {
+          label: "Meta Help Center: How AI generated images in ads are identified and labeled",
+          href: "https://www.meta.com/help/artificial-intelligence/355108217670024/",
+        },
       },
       {
         heading: "Part four: respect the culture you are selling",

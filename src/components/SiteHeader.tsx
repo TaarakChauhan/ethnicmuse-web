@@ -23,6 +23,7 @@ export default function SiteHeader() {
     { label: "Gallery", href: section("gallery") },
     { label: "Packs", href: section("packs") },
     { label: "Prompts", href: "/prompts" },
+    { label: "Blog", href: "/blog" },
     { label: "License", href: section("license") },
     { label: "Shop", href: GUMROAD_HERO, external: true },
   ];

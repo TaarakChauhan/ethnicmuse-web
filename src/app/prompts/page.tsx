@@ -75,7 +75,7 @@ const TRUST = [
   },
   {
     title: "Not the image packs",
-    body: "EthnicMuse also sells ready stock image bundles with a commercial license for those files. This page is for prompt PDFs only.",
+    body: "EthnicMuseWorld also sells ready stock image bundles with a commercial license for those files. This page is for prompt PDFs only.",
   },
   {
     title: "Refunds",
@@ -284,14 +284,14 @@ export default function PromptsPage() {
                 rel="noreferrer"
                 className="font-semibold text-[#0071e3] transition hover:opacity-80"
               >
-                Browse the EthnicMuse stock library on Gumroad.
+                Browse the EthnicMuseWorld stock library on Gumroad.
               </a>
             </p>
           </div>
         </section>
       </main>
 
-      <SiteFooter note="EthnicMuse World. Prompt PDFs for saree stock photography." />
+      <SiteFooter note="EthnicMuseWorld. Prompt PDFs for saree stock photography." />
     </div>
   );
 }

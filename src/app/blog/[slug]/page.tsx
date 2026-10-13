@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  return { title: `${post.title} | EthnicMuse`, description: post.description };
+  return { title: `${post.title} | EthnicMuseWorld`, description: post.description };
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -72,7 +72,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
           <div className="mt-14 rounded-2xl border border-[#e8e8ed] bg-[#f5f5f7] px-6 py-6">
             <p className="text-sm leading-relaxed text-[#424245]">
-              EthnicMuse World makes AI generated ethnic fashion stock packs for
+              EthnicMuseWorld makes AI generated ethnic fashion stock packs for
               banners, collections, social posts and emails. Every image is AI
               generated and depicts adults only.
             </p>

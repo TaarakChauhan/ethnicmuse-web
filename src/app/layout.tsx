@@ -9,7 +9,9 @@ const geistSans = Geist({
 });
 
 export const metadata: Metadata = {
-  title: "EthnicMuse | Commercial ethnic fashion stock",
+  title: "EthnicMuseWorld | Commercial ethnic fashion stock",
+  applicationName: "EthnicMuseWorld",
+  openGraph: { siteName: "EthnicMuseWorld", title: "EthnicMuseWorld | Commercial ethnic fashion stock", type: "website" },
   description:
     "Commercial license Indian ethnic fashion and saree lifestyle stock for ads, lookbooks, and brand calendars.",
 };

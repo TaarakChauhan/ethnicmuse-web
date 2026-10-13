@@ -72,7 +72,7 @@ export const POSTS: BlogPost[] = [
         heading: "Where stock and AI images fit, and where they do not",
         paragraphs: [
           "Mood photos are the hardest for a small shop to make, because they need a model, styling and a setting. This is where licensed stock can help. Banners, collection headers, Instagram posts, email headers and festive campaign graphics all benefit from lifestyle images that set the scene.",
-          "At EthnicMuse World, we make AI generated ethnic fashion stock packs for exactly this layer. We say clearly that they are AI generated, because they are. They are not photos of real people or of your products, so they belong in the mood layer, never in place of your truth photos.",
+          "At EthnicMuseWorld, we make AI generated ethnic fashion stock packs for exactly this layer. We say clearly that they are AI generated, because they are. They are not photos of real people or of your products, so they belong in the mood layer, never in place of your truth photos.",
           "Used that way, they can make a page feel complete without a shoot. Used the wrong way, as a stand in for the product itself, they would mislead your customer. The line is simple. Show your real product as it is. Use mood images to tell the story around it.",
         ],
       },
@@ -122,7 +122,7 @@ export const POSTS: BlogPost[] = [
         paragraphs: [
           "Your homepage banner, collection headers and social posts set the mood. This is the part shoppers notice first, and the part many small stores leave until the last minute.",
           "A festive banner does not need to be complicated. Warm light, diyas, rich colors, a draped saree, a short line of text and a clear button to the collection. Keep the text short enough to read on a phone.",
-          "If you do not have festive lifestyle photos of your own, licensed stock images can fill this role. EthnicMuse World is preparing a limited Diwali set of AI generated festive saree images for this purpose. Whatever you use, make sure the license covers commercial use on your store and in ads, and be open with customers that the banner image is a mood image, not the product in their cart.",
+          "If you do not have festive lifestyle photos of your own, licensed stock images can fill this role. EthnicMuseWorld is preparing a limited Diwali set of AI generated festive saree images for this purpose. Whatever you use, make sure the license covers commercial use on your store and in ads, and be open with customers that the banner image is a mood image, not the product in their cart.",
         ],
       },
       {
@@ -159,7 +159,7 @@ export const POSTS: BlogPost[] = [
         heading: "A short checklist to print",
         paragraphs: [
           "Two or three focused festive collections. Stock checked and unavailable items removed. One honest daylight photo and one detail photo per product. A festive homepage banner and collection headers. A clear last order date shown across the store. Festive emails and captions written in advance. Return, exchange and sizing information easy to find. Packing supplies ready.",
-          "If you are looking for festive mood images for your banners, you can browse what we have in the EthnicMuse World shop on Gumroad. Either way, we hope your season is bright and busy in the best way.",
+          "If you are looking for festive mood images for your banners, you can browse what we have in the EthnicMuseWorld shop on Gumroad. Either way, we hope your season is bright and busy in the best way.",
         ],
       },
     ],
@@ -190,7 +190,7 @@ export const POSTS: BlogPost[] = [
           "Can I edit it? Adding text, cropping or placing it in a banner design is usually fine, but check.",
           "What can I not do? Almost every stock license forbids reselling the images themselves, giving them away as files, or putting them on products like printed merchandise without extra rights.",
           "Keep a simple record. A folder or spreadsheet with each image, where it came from, and a copy or link to its license. If anyone ever asks, you can answer in a minute.",
-          "For our own packs at EthnicMuse World, the license covers using the images in brand content such as websites, social posts, ads, lookbooks and client projects. It does not allow reselling or redistributing the files themselves. The full terms are on each product listing, and you should read them before you buy anything, from us or anyone else.",
+          "For our own packs at EthnicMuseWorld, the license covers using the images in brand content such as websites, social posts, ads, lookbooks and client projects. It does not allow reselling or redistributing the files themselves. The full terms are on each product listing, and you should read them before you buy anything, from us or anyone else.",
         ],
       },
       {
@@ -207,7 +207,7 @@ export const POSTS: BlogPost[] = [
           "AI images have become good enough that many people cannot tell them apart from photos. That is exactly why disclosure matters. Customers who find out later that an image was AI generated, and was not labelled, often feel tricked, even if nothing else was wrong.",
           "Disclosure does not have to be awkward. A small line in a banner caption, such as \"Illustrative AI generated image\", is enough on a website. A note in your About page or FAQ that explains you use AI generated lifestyle images for campaigns, and real photos for products, builds trust rather than losing it.",
           "Platforms are also moving in this direction. Meta, for example, explains in its Help Center that ad images created or edited with AI tools can carry an \"AI info\" label. Rules change often, so check the current policy for each platform where you advertise.",
-          "We follow the same principle ourselves. Every EthnicMuse World image is AI generated, and we say so on our site and listings. The people in them are not real models, and the images depict adults only.",
+          "We follow the same principle ourselves. Every EthnicMuseWorld image is AI generated, and we say so on our site and listings. The people in them are not real models, and the images depict adults only.",
         ],
         source: {
           label: "Meta Help Center: How AI generated images in ads are identified and labeled",
@@ -233,7 +233,7 @@ export const POSTS: BlogPost[] = [
         heading: "A quick checklist",
         paragraphs: [
           "Commercial use is allowed by the license. Paid ads are covered if you plan to run them. You have a record of where each image came from. Product gallery images show your actual products. AI generated images are labelled or explained. Cultural details look right. Images are styled to match your brand.",
-          "If you want lifestyle images made for ethnic wear stores, with clear licensing and honest AI labelling, you are welcome to look through the EthnicMuse World packs on Gumroad.",
+          "If you want lifestyle images made for ethnic wear stores, with clear licensing and honest AI labelling, you are welcome to look through the EthnicMuseWorld packs on Gumroad.",
         ],
       },
     ],
@@ -295,7 +295,7 @@ export const POSTS: BlogPost[] = [
       {
         heading: "A word about AI generated saree images",
         paragraphs: [
-          "AI image tools have become popular for lifestyle and campaign images, and EthnicMuse World makes AI generated saree stock packs ourselves. We have learned that saree drapes are one of the hardest things for these tools to get right. They can produce pleats that go nowhere, a pallu that merges into a blouse, or a border that changes pattern halfway across.",
+          "AI image tools have become popular for lifestyle and campaign images, and EthnicMuseWorld makes AI generated saree stock packs ourselves. We have learned that saree drapes are one of the hardest things for these tools to get right. They can produce pleats that go nowhere, a pallu that merges into a blouse, or a border that changes pattern halfway across.",
           "So if you use AI images, ours or anyone else's, look closely. Check the pleats, the pallu, the border and the hands. Discard anything that a person who drapes sarees would spot as impossible. And always label AI images as such, and keep them out of your product gallery, where only your real saree belongs.",
         ],
       },
@@ -366,7 +366,7 @@ export const POSTS: BlogPost[] = [
           "The product page is now clear and truthful. What it still lacks is feeling. The shopper can see the saree, but she cannot yet picture the evening she wears it.",
           "This is where a mood image helps, placed above the product grid on the collection page or as a festive banner, not in the product gallery. Meera's Sarees uses a warm lifestyle image of a woman in a draped silk saree at a Diwali gathering, with a small caption that says it is an illustrative AI generated image.",
           "The image sets the tone of the whole collection. It does not claim to be this specific saree, and the label makes that clear. The product photos underneath do the job of showing exactly what is for sale.",
-          "This layer is what we make at EthnicMuse World. Our packs are AI generated lifestyle images built for ethnic wear stores, and we label them as AI generated. They work for banners, collection headers, social posts and emails. They are not a replacement for photos of your real products, and we would never suggest using them that way.",
+          "This layer is what we make at EthnicMuseWorld. Our packs are AI generated lifestyle images built for ethnic wear stores, and we label them as AI generated. They work for banners, collection headers, social posts and emails. They are not a replacement for photos of your real products, and we would never suggest using them that way.",
         ],
       },
       {
@@ -386,7 +386,7 @@ export const POSTS: BlogPost[] = [
         heading: "Try it on one page",
         paragraphs: [
           "Choose one product, ideally one that gets visits but few sales, and work through the six changes. Then compare the before and after side by side. You will likely see things you never noticed while looking at your store every day.",
-          "If you would like lifestyle images for the mood layer, you can browse the EthnicMuse World packs on Gumroad. And if you decide to build that layer some other way, the steps above still apply.",
+          "If you would like lifestyle images for the mood layer, you can browse the EthnicMuseWorld packs on Gumroad. And if you decide to build that layer some other way, the steps above still apply.",
         ],
       },
     ],

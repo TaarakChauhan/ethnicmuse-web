@@ -4,7 +4,7 @@ type SiteFooterProps = {
 };
 
 export default function SiteFooter({
-  note = "EthnicMuse World. Commercial ethnic fashion stock.",
+  note = "EthnicMuseWorld. Commercial ethnic fashion stock.",
   className = "",
 }: SiteFooterProps) {
   return (

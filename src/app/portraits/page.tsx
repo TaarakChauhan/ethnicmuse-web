@@ -38,7 +38,7 @@ const WHY_BUY = [
 const TRUST = [
   {
     title: "AI disclosure",
-    body: "These are AI generated stock portraits of adult Indian women. They are not photographs of hired models or real people photographed by EthnicMuse.",
+    body: "These are AI generated stock portraits of adult Indian women. They are not photographs of hired models or real people photographed by EthnicMuseWorld.",
   },
   {
     title: "Commercial license",

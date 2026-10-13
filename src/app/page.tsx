@@ -211,7 +211,7 @@ export default function Home() {
                 />
                 <div className="gallery-protection" aria-hidden="true" />
                 <span className="gallery-watermark" aria-hidden="true">
-                  EthnicMuse
+                  EthnicMuseWorld
                 </span>
               </figure>
             ))}
@@ -335,7 +335,7 @@ export default function Home() {
                   Full shop
                 </h3>
                 <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                  Browse every EthnicMuse World pack in one place.
+                  Browse every EthnicMuseWorld pack in one place.
                 </p>
                 <a
                   href={GUMROAD_HOME}
@@ -383,7 +383,7 @@ export default function Home() {
             License in plain words
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
-            Commercial license included for ads, websites, social, lookbooks, and client work under standard EthnicMuse terms. You cannot resell the files as a competing stock pack or claim the people are real models you photographed. Images are AI generated ethnic fashion stock curated for creative use.
+            Commercial license included for ads, websites, social, lookbooks, and client work under standard EthnicMuseWorld terms. You cannot resell the files as a competing stock pack or claim the people are real models you photographed. Images are AI generated ethnic fashion stock curated for creative use.
           </p>
         </section>
       </main>

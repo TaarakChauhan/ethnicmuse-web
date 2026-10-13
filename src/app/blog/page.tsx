@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 import { POSTS } from "@/content/blog";
 
 export const metadata: Metadata = {
-  title: "Blog | EthnicMuse",
+  title: "Blog | EthnicMuseWorld",
   description:
     "Practical, honest guides for small saree and ethnic wear stores: product photos, Diwali prep, image licensing, saree drapes and better product pages.",
 };

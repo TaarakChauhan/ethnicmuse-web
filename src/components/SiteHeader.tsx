@@ -52,7 +52,7 @@ export default function SiteHeader() {
           href={isHome ? "#top" : "/"}
           className="text-lg font-semibold tracking-tight text-[#1d1d1f] md:text-xl"
         >
-          EthnicMuse
+          EthnicMuseWorld
         </a>
 
         <nav className="hidden items-center gap-x-5 text-[14px] text-[#86868b] lg:flex xl:gap-x-8 xl:text-[15px]">

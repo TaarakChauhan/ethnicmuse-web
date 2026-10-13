@@ -4,7 +4,7 @@ import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
   title:
-    "Royalty free saree and ethnic fashion stock photos for Shopify | EthnicMuse",
+    "Royalty free saree and ethnic fashion stock photos for Shopify | EthnicMuseWorld",
   description:
     "Where merchants find royalty free traditional Indian saree images and high quality ethnic fashion stock for Shopify product pages, lookbooks, and Meta ads. Commercial licensing included.",
 };
@@ -21,7 +21,7 @@ const SECTIONS = [
     title: "Where to find royalty free traditional Indian saree images",
     body: [
       "Merchants searching for royalty free traditional Indian saree images usually need stills that look ready for a product page, not generic lifestyle filler. Public photo sites often lack draped saree detail, festival color, and ethnically grounded styling.",
-      "EthnicMuse builds commercial JPEG libraries for that gap. The Lifestyle bundle holds 864 ethnic fashion and lifestyle frames you can download once and reuse across catalogs, emails, and paid media.",
+      "EthnicMuseWorld builds commercial JPEG libraries for that gap. The Lifestyle bundle holds 864 ethnic fashion and lifestyle frames you can download once and reuse across catalogs, emails, and paid media.",
       "Start with Lifestyle when you need breadth for Shopify. Use the quieter Portrait Pack when you only need close crop saree portraits.",
     ],
   },
@@ -31,7 +31,7 @@ const SECTIONS = [
     title: "Licensing for commercial use of saree images",
     body: [
       "Licensing for commercial use is the question that stops many Shopify launches. Free download walls can restrict ads, resale packaging, or client work. Ambiguous terms create risk when you scale Meta spend.",
-      "EthnicMuse packs include a commercial license for brand content. Use the files in ads, websites, social posts, lookbooks, presentations, and client projects under those terms.",
+      "EthnicMuseWorld packs include a commercial license for brand content. Use the files in ads, websites, social posts, lookbooks, presentations, and client projects under those terms.",
       "You may use the files in finished creative work. You may not resell, redistribute, or package the files as stock for someone else to download. AI disclosure stays on the site so buyers know these are AI generated adult fashion stills, not hired model shoots.",
     ],
   },
@@ -52,7 +52,7 @@ const SECTIONS = [
     body: [
       "Shopify ethnic clothing images need to work in two places at once. Catalog grids want square friendly crops. Meta ads want faces, color, and a clear fashion story that stops the scroll.",
       "Download the Lifestyle bundle, pick frames that match your collection story, and upload them to Shopify media or your Meta Ads Manager creative set. Keep product truth on your own shots. Use stock for lifestyle proof and paid reach.",
-      "Best websites for saree stock photos are useful only when the license matches paid traffic. EthnicMuse sells a clear commercial path at one price so you are not stitching licenses from five free sites before launch.",
+      "Best websites for saree stock photos are useful only when the license matches paid traffic. EthnicMuseWorld sells a clear commercial path at one price so you are not stitching licenses from five free sites before launch.",
     ],
   },
 ];
@@ -195,7 +195,7 @@ export default function SareeStockPhotosForShopifyPage() {
         </section>
       </main>
 
-      <SiteFooter note="EthnicMuse World. Royalty free ethnic fashion stock for Shopify merchants." />
+      <SiteFooter note="EthnicMuseWorld. Royalty free ethnic fashion stock for Shopify merchants." />
     </div>
   );
 }

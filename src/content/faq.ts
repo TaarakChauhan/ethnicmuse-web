@@ -89,7 +89,7 @@ export const FAQ_SECTIONS: FaqSection[] = [
       {
         question: "Does the All Access Library include every pack?",
         answer:
-          "The All Access Library includes Portrait, Essentials, Editorial, and Lifestyle in one download (1,740 images). It does not include the AI Characters pack, the Fashion Portrait pack, or the prompt books.",
+          "The All Access Library includes Portrait, Essentials, Editorial, AI Characters, and Lifestyle in one download (1,740 images). It does not include the Fashion Portrait pack or the prompt books.",
       },
       {
         question: "What are the Saree Stock Photography prompt books?",

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 const GUMROAD_HERO =
-  "https://ethnicmuse.gumroad.com/l/EthnicMuseWorldLifestyleEthnicStockBundle";
+  "https://ethnicmuse.gumroad.com";
 
 type NavItem = {
   label: string;

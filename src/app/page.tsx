@@ -13,6 +13,72 @@ const GUMROAD_HOME = "https://ethnicmuse.gumroad.com";
 const GUMROAD_PORTRAITS =
   "https://ethnicmuse.gumroad.com/l/EthnicMuseSareePortraitPack";
 
+const PACK_CARDS = [
+  {
+    title: "The Saree Portrait Starter",
+    price: "$7.99",
+    priceNote: "USD",
+    bestFor: "Testing ad creatives, seasonal announcements, and social grids.",
+    inside: [
+      "272 high resolution saree portraits",
+      "Curated mix of soft glam, warm window light, and festive silk looks",
+      "Watermark free, color graded files ready for text overlays",
+      "Commercial license included",
+    ],
+    cta: "Get the Starter Pack",
+    href: GUMROAD_PORTRAITS,
+    external: true,
+    featured: false,
+  },
+  {
+    title: "The Complete Lifestyle Stock Bundle",
+    price: "$14.99",
+    priceNote: "USD",
+    bestFor: "Shopify collection launches, lookbooks, and full funnel Meta ad campaigns.",
+    inside: [
+      "864 editorial and lifestyle stills spanning silk, velvet, evening glam, and studio portraits",
+      "Cohesive skin tones, authentic jewelry styling, and rich fabric textures",
+      "Compositions that crop well for Shopify headers, 4:5 feed ads, and 9:16 Stories and Reels covers",
+      "Commercial license for paid ads and ecommerce",
+    ],
+    cta: "Shop the Full Bundle",
+    href: GUMROAD_HERO,
+    external: true,
+    featured: true,
+  },
+  {
+    title: "The Prompt Vault",
+    price: "$4.99",
+    priceNote: "USD per volume",
+    bestFor: "In house creative teams and designers generating their own brand visuals.",
+    inside: [
+      "2,000 tested AI image prompts across two volumes",
+      "Written for authentic Indian drapes, lighting, and South Asian features",
+      "Works with Midjourney and Flux",
+      "Printable PDF",
+    ],
+    cta: "Unlock the Prompts",
+    href: "/prompts",
+    external: false,
+    featured: false,
+  },
+];
+
+const LICENSE_CAN = [
+  { title: "Run paid ads", body: "use in Meta (Instagram and Facebook), Google, and Pinterest campaigns with unlimited impressions." },
+  { title: "Build your storefront", body: "Shopify product pages, collection banners, hero sliders, and lookbooks." },
+  { title: "Edit and customize", body: "add typography, logos, color grading, background swaps, or mockups." },
+  { title: "Client work", body: "agencies and freelancers may use a pack for one client brand per license." },
+];
+
+const LICENSE_CANNOT = [
+  { title: "Resell as stock", body: "do not redistribute or resell the raw files on stock sites, Gumroad, or free download hubs." },
+  { title: "Print on demand merch", body: "do not sell the standalone images printed on posters, shirts, or tote bags." },
+  { title: "Trademarks", body: "do not register the images as a trademark or logo." },
+  { title: "Training datasets", body: "do not use the files to train competing AI models or LoRAs." },
+  { title: "Fake endorsements", body: "do not imply a real brand or person endorsed you or was hired." },
+];
+
 const GALLERY = [
   { src: "/gallery/gallery-01.jpg", alt: "Evening glam saree portrait" },
   { src: "/gallery/gallery-02.jpg", alt: "Elegant woman in silk saree" },
@@ -264,110 +330,85 @@ export default function Home() {
 
         <section id="packs" className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
           <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
-            <article className="rounded-3xl border border-[#1d1d1f] bg-[#1d1d1f] p-7 text-white shadow-[0_18px_50px_rgba(0,0,0,0.18)] md:p-10">
-              <p className="text-xs font-medium uppercase tracking-[0.18em] text-white/70">
-                Featured
-              </p>
-              <h3 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight md:text-4xl">
-                Lifestyle bundle
-              </h3>
-              <p className="mt-3 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
-                864 ethnic fashion and lifestyle frames. Best mid tier for campaigns.
-              </p>
-              <p className="mt-5 text-3xl font-semibold tracking-tight">$14.99 USD</p>
-              <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/75">
-                For Shopify product pages, collection grids, Meta ads, and lookbooks.
-              </p>
-              <a
-                href={GUMROAD_HERO}
-                target="_blank"
-                rel="noreferrer"
-                className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
-              >
-                Buy Lifestyle stills
-              </a>
-            </article>
+            <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
+              Curated asset bundles
+            </p>
+            <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-[#1d1d1f] md:text-5xl">
+              Studio grade ethnic campaigns. Zero shoot day overhead.
+            </h2>
+            <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
+              Skip the studio rentals, model coordination, and weeks of post production. Download cohesive, high resolution saree and ethnic lifestyle collections ready to drop straight into your Shopify themes, Meta ad sets, and festive lookbooks.
+            </p>
 
-            <div className="mt-5 grid grid-cols-1 gap-5 md:grid-cols-3 md:gap-6">
-              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                  EthnicMuse Saree Portrait Pack
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                  272 commercial JPEG saree portraits for campaigns, lookbooks, and brand content.
-                </p>
-                <p className="mt-4 text-lg font-semibold text-[#1d1d1f]">$7.99</p>
-                <div className="mt-5 flex flex-col items-start gap-1">
-                  <a
-                    href="/portraits"
-                    className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
-                  >
-                    View the pack
-                  </a>
-                  <a
-                    href={GUMROAD_PORTRAITS}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
-                  >
-                    Buy on Gumroad
-                  </a>
-                </div>
-              </article>
-              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                  Portrait faces
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                  Smaller entry pack for a first commercial test.
-                </p>
-                <a
-                  href={GUMROAD_ENTRY}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
+            <div className="mt-10 grid grid-cols-1 items-stretch gap-5 md:grid-cols-3 md:gap-6">
+              {PACK_CARDS.map((card) => (
+                <article
+                  key={card.title}
+                  className={`relative flex flex-col rounded-3xl p-7 md:p-8 ${
+                    card.featured
+                      ? "border border-[#1d1d1f] bg-[#1d1d1f] text-white shadow-[0_18px_50px_rgba(0,0,0,0.18)] md:-translate-y-2"
+                      : "border border-[#e8e8ed] bg-white text-[#1d1d1f] shadow-[0_8px_28px_rgba(0,0,0,0.05)]"
+                  }`}
                 >
-                  Open on Gumroad
-                </a>
-              </article>
-              <article className="rounded-2xl border border-[#e8e8ed] bg-white p-6 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-7">
-                <h3 className="text-xl font-semibold tracking-tight text-[#1d1d1f]">
-                  Full shop
-                </h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
-                  Browse every EthnicMuseWorld pack in one place.
-                </p>
-                <a
-                  href={GUMROAD_HOME}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex min-h-11 items-center text-sm text-[#86868b] transition hover:text-[#1d1d1f]"
-                >
-                  Visit shop
-                </a>
-              </article>
+                  {card.featured ? (
+                    <span className="absolute right-6 top-6 rounded-full bg-white px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#1d1d1f]">
+                      Most popular
+                    </span>
+                  ) : null}
+                  <h3 className="max-w-[80%] text-xl font-semibold tracking-tight md:text-2xl">
+                    {card.title}
+                  </h3>
+                  <p className="mt-4 text-3xl font-semibold tracking-tight">
+                    {card.price}
+                    <span className={`ml-2 text-sm font-normal ${card.featured ? "text-white/70" : "text-[#86868b]"}`}>
+                      {card.priceNote}
+                    </span>
+                  </p>
+                  <p className={`mt-4 text-sm leading-relaxed ${card.featured ? "text-white/75" : "text-[#86868b]"}`}>
+                    <span className={`font-semibold ${card.featured ? "text-white" : "text-[#1d1d1f]"}`}>Best for: </span>
+                    {card.bestFor}
+                  </p>
+                  <p className={`mt-5 text-xs font-medium uppercase tracking-[0.18em] ${card.featured ? "text-white/60" : "text-[#86868b]"}`}>
+                    What is inside
+                  </p>
+                  <ul className="mt-3 flex-1 space-y-2.5">
+                    {card.inside.map((item) => (
+                      <li key={item} className={`flex gap-2.5 text-sm leading-relaxed ${card.featured ? "text-white/85" : "text-[#1d1d1f]"}`}>
+                        <span aria-hidden="true" className={card.featured ? "text-white" : "text-[#1d1d1f]"}>✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href={card.href}
+                    {...(card.external ? { target: "_blank", rel: "noreferrer" } : {})}
+                    className={`mt-7 inline-flex min-h-12 w-full items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition ${
+                      card.featured
+                        ? "bg-white text-[#1d1d1f] hover:bg-[#f5f5f7]"
+                        : "bg-[#1d1d1f] text-white hover:bg-black"
+                    }`}
+                  >
+                    {card.cta}
+                  </a>
+                </article>
+              ))}
             </div>
 
-            <p className="mt-8 text-center text-sm text-[#86868b]">
-              Also browse{" "}
-              <a
-                href="/portraits"
-                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
-              >
+            <p className="mt-10 text-center text-sm text-[#86868b]">
+              Want a smaller test first? Try the{" "}
+              <a href={GUMROAD_ENTRY} target="_blank" rel="noreferrer" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
+                faces pack
+              </a>
+              , or{" "}
+              <a href={GUMROAD_HOME} target="_blank" rel="noreferrer" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
+                browse every pack in the full shop
+              </a>
+              . Also see{" "}
+              <a href="/portraits" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
                 Portraits
-              </a>
-              ,{" "}
-              <a
-                href="/prompts"
-                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
-              >
-                Prompts
-              </a>
-              , and the{" "}
-              <a
-                href="/saree-stock-photos-for-shopify"
-                className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80"
-              >
+              </a>{" "}
+              and the{" "}
+              <a href="/saree-stock-photos-for-shopify" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
                 saree stock guide for Shopify
               </a>
               .
@@ -379,11 +420,46 @@ export default function Home() {
           id="license"
           className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20"
         >
-          <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
-            License in plain words
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
+            Clear, worry free rights
+          </p>
+          <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d1d1f] md:text-5xl">
+            One simple license built for modern commerce.
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
-            Commercial license included for ads, websites, social, lookbooks, and client work under standard EthnicMuseWorld terms. You cannot resell the files as a competing stock pack or claim the people are real models you photographed. Images are AI generated ethnic fashion stock curated for creative use.
+            Every EthnicMuseWorld pack comes with a perpetual commercial license. No recurring royalties, no impression caps on your ads, and no confusing legal jargon.
+          </p>
+
+          <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
+            {[
+              { heading: "What you can do", items: LICENSE_CAN, mark: "✓", markClass: "bg-[#1d1d1f] text-white" },
+              { heading: "What you cannot do", items: LICENSE_CANNOT, mark: "✕", markClass: "bg-[#f5f5f7] text-[#1d1d1f] border border-[#d2d2d7]" },
+            ].map((col) => (
+              <div key={col.heading} className="rounded-3xl border border-[#e8e8ed] bg-white p-7 shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:p-8">
+                <h3 className="text-lg font-semibold tracking-tight text-[#1d1d1f]">{col.heading}</h3>
+                <ul className="mt-5 space-y-4">
+                  {col.items.map((item) => (
+                    <li key={item.title} className="flex gap-3">
+                      <span aria-hidden="true" className={`mt-0.5 inline-flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-xs font-semibold ${col.markClass}`}>
+                        {col.mark}
+                      </span>
+                      <p className="text-sm leading-relaxed text-[#86868b]">
+                        <span className="font-semibold text-[#1d1d1f]">{item.title}: </span>
+                        {item.body}
+                      </p>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+
+          <p className="mt-6 text-center text-sm leading-relaxed text-[#86868b]">
+            <span className="font-semibold text-[#1d1d1f]">Watermark free on delivery.</span>{" "}
+            The EthnicMuseWorld watermark you see in the live gallery is not on your downloaded files. Instant delivery through Gumroad right after checkout.
+          </p>
+          <p className="mt-4 text-center text-xs leading-relaxed text-[#86868b]">
+            Images are AI generated and human curated ethnic fashion stock. They are not photographs of hired models, and you cannot claim the people are real models you photographed.
           </p>
         </section>
       </main>

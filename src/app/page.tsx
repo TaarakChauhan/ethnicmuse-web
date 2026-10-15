@@ -351,11 +351,11 @@ export default function Home() {
                   }`}
                 >
                   {card.featured ? (
-                    <span className="absolute right-6 top-6 rounded-full bg-white px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#1d1d1f]">
+                    <span className="mb-4 inline-flex w-fit rounded-full bg-white px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.18em] text-[#1d1d1f]">
                       Most popular
                     </span>
                   ) : null}
-                  <h3 className="max-w-[80%] text-xl font-semibold tracking-tight md:text-2xl">
+                  <h3 className="text-xl font-semibold tracking-tight md:text-2xl">
                     {card.title}
                   </h3>
                   <p className="mt-4 text-3xl font-semibold tracking-tight">

@@ -4,9 +4,9 @@ import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
 export const metadata: Metadata = {
-  title: "EthnicMuse Saree Portrait Pack | 272 Commercial Stock Portraits",
+  title: "EthnicMuse Saree Portrait Pack | 50 Commercial Stock Portraits",
   description:
-    "EthnicMuse Saree Portrait Pack. 272 commercial JPEG saree stock portraits of adult Indian women for campaigns, lookbooks, websites, and social content.",
+    "EthnicMuse Saree Portrait Pack. 50 commercial PNG saree stock portraits of adult Indian women for campaigns, lookbooks, websites, and social content.",
 };
 
 const GUMROAD_URL =
@@ -29,7 +29,7 @@ const FOR_WHOM = [
 ];
 
 const WHY_BUY = [
-  "272 JPEG portraits give you a broad visual library at one simple price.",
+  "50 PNG portraits give you a focused visual library at one simple price.",
   "Saree focused portraits make it easier to keep your campaign visually aligned.",
   "Commercial licensing is included for brand content and client work.",
   "Download the files from Gumroad and use them in the tools you already know.",
@@ -50,7 +50,7 @@ const TRUST = [
   },
   {
     title: "What you receive",
-    body: "One digital pack with 272 commercial JPEG saree stock portraits. Gumroad provides the download after checkout.",
+    body: "One digital pack with 50 commercial PNG saree stock portraits. Gumroad provides the download after checkout.",
   },
 ];
 
@@ -70,13 +70,13 @@ export default function PortraitsPage() {
                 Saree portraits for your next beautiful campaign.
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-[#86868b] md:text-lg">
-                EthnicMuse Saree Portrait Pack gives you 272 commercial JPEG
+                EthnicMuse Saree Portrait Pack gives you 50 commercial PNG
                 portraits of adult Indian women in saree looks. A focused,
                 ready to use library for brands, creators, and client work.
               </p>
               <div className="mt-7 flex flex-wrap gap-2 text-sm text-[#1d1d1f]">
-                <span className="rounded-full bg-[#f5f5f7] px-4 py-2">272 portraits</span>
-                <span className="rounded-full bg-[#f5f5f7] px-4 py-2">JPEG files</span>
+                <span className="rounded-full bg-[#f5f5f7] px-4 py-2">50 portraits</span>
+                <span className="rounded-full bg-[#f5f5f7] px-4 py-2">PNG files</span>
                 <span className="rounded-full bg-[#f5f5f7] px-4 py-2">Commercial license</span>
               </div>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -86,7 +86,7 @@ export default function PortraitsPage() {
                   rel="noreferrer"
                   className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-6 py-3 text-sm font-semibold text-white transition hover:bg-black"
                 >
-                  Get the pack for $7.99
+                  Get the pack for $9.99
                 </a>
                 <a
                   href="#previews"
@@ -131,7 +131,7 @@ export default function PortraitsPage() {
                 </h2>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-[#86868b]">
-                The full pack includes 272 portraits. These previews show the
+                The full pack includes 50 portraits. These previews show the
                 range of saree styling and visual moods inside.
               </p>
             </div>
@@ -225,7 +225,7 @@ export default function PortraitsPage() {
               Bring more saree beauty to your next piece of content.
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#86868b] md:text-base">
-              Get 272 commercial JPEG portraits for $7.99. Download the pack
+              Get 50 commercial PNG portraits for $9.99. Download the pack
               on Gumroad and start creating.
             </p>
             <a

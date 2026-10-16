@@ -16,11 +16,11 @@ const GUMROAD_PORTRAITS =
 const PACK_CARDS = [
   {
     title: "The Saree Portrait Starter",
-    price: "$7.99",
+    price: "$9.99",
     priceNote: "USD",
     bestFor: "Testing ad creatives, seasonal announcements, and social grids.",
     inside: [
-      "272 high resolution saree portraits",
+      "50 high resolution PNG saree portraits",
       "Curated mix of soft glam, warm window light, and festive silk looks",
       "Watermark free, color graded files ready for text overlays",
       "Commercial license included",

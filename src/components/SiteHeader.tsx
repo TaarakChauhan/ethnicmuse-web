@@ -21,13 +21,11 @@ export default function SiteHeader() {
 
   const NAV: NavItem[] = [
     { label: "Gallery", href: section("gallery") },
-    { label: "Packs", href: section("packs") },
-    { label: "Prompts", href: "/prompts" },
+    { label: "Image Packs", href: section("packs") },
+    { label: "Prompt PDFs", href: "/prompts" },
     { label: "Blog", href: "/blog" },
-    { label: "FAQ", href: "/faq" },
-    { label: "License", href: section("license") },
-    { label: "Shop", href: GUMROAD_HERO, external: true },
   ];
+  const SHOP: NavItem = { label: "Shop All", href: GUMROAD_HERO, external: true };
 
   useEffect(() => {
     if (!menuOpen) return;
@@ -71,11 +69,28 @@ export default function SiteHeader() {
               {item.label}
             </a>
           ))}
+          <a
+            href={SHOP.href}
+            target="_blank"
+            rel="noreferrer"
+            className="ml-2 inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 text-[14px] font-semibold text-white shadow-[0_6px_18px_rgba(0,0,0,0.18)] transition hover:bg-black xl:text-[15px]"
+          >
+            {SHOP.label}
+          </a>
         </nav>
 
+        <div className="flex items-center gap-2 lg:hidden">
+          <a
+            href={SHOP.href}
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-4 text-sm font-semibold text-white transition hover:bg-black"
+          >
+            {SHOP.label}
+          </a>
         <button
           type="button"
-          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f] lg:hidden"
+          className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-[#d2d2d7] bg-white text-[#1d1d1f]"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((v) => !v)}
@@ -105,6 +120,7 @@ export default function SiteHeader() {
             )}
           </svg>
         </button>
+        </div>
       </div>
 
       {menuOpen && (
@@ -123,6 +139,15 @@ export default function SiteHeader() {
                 {item.label}
               </a>
             ))}
+            <a
+              href={SHOP.href}
+              target="_blank"
+              rel="noreferrer"
+              className="mt-2 inline-flex min-h-11 items-center justify-center rounded-full bg-[#1d1d1f] px-5 text-base font-semibold text-white transition hover:bg-black"
+              onClick={() => setMenuOpen(false)}
+            >
+              {SHOP.label}
+            </a>
           </nav>
         </div>
       )}

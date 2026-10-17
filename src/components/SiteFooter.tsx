@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 type SiteFooterProps = {
   note?: string;
   className?: string;
@@ -14,7 +16,7 @@ export default function SiteFooter({
       <p>{note}</p>
       <nav className="mt-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
         <a href="/prompts" className="transition hover:text-[#1d1d1f]">
-          Prompts
+          Prompt PDFs
         </a>
         <a href="/portraits" className="transition hover:text-[#1d1d1f]">
           Portraits
@@ -25,6 +27,12 @@ export default function SiteFooter({
         >
           Saree stock guide
         </a>
+        <a href="/faq" className="transition hover:text-[#1d1d1f]">
+          FAQ
+        </a>
+        <Link href="/#license" className="transition hover:text-[#1d1d1f]">
+          License
+        </Link>
       </nav>
     </footer>
   );

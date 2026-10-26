@@ -8,7 +8,7 @@ import SiteHeader from "@/components/SiteHeader";
 const GUMROAD_HERO =
   "https://ethnicmuse.gumroad.com/l/EthnicMuseWorldLifestyleEthnicStockBundle";
 const GUMROAD_ENTRY =
-  "https://ethnicmuse.gumroad.com/l/SareePortraitFacesPack";
+  "https://ethnicmuse.gumroad.com/l/EthnicMuseSareePortraitPack";
 const GUMROAD_HOME = "https://ethnicmuse.gumroad.com";
 const GUMROAD_PORTRAITS =
   "https://ethnicmuse.gumroad.com/l/EthnicMuseSareePortraitPack";
@@ -295,7 +295,7 @@ export default function Home() {
                 rel="noreferrer"
                 className="text-sm text-[#86868b] underline decoration-[#d2d2d7] underline-offset-4 transition hover:text-[#1d1d1f]"
               >
-                Start with faces pack
+                Start with the Saree Portrait Starter
               </a>
             </div>
           </div>
@@ -369,7 +369,7 @@ export default function Home() {
             <p className="mt-6 text-center text-sm text-[#86868b]">
               Want a smaller test first? Try the{" "}
               <a href={GUMROAD_ENTRY} target="_blank" rel="noreferrer" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
-                faces pack
+                Saree Portrait Starter
               </a>
               , or{" "}
               <a href={GUMROAD_HOME} target="_blank" rel="noreferrer" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">

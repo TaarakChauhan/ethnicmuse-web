@@ -253,7 +253,7 @@ function Cover({ product }: { product: Volume }) {
     : "bg-[#f6efe2] text-[#6b1d24] border-[#7a1f2b]";
   const sub = v2 ? "text-[#e9c46a]/80" : "text-[#6b1d24]/75";
   return (
-    <div className={`relative flex aspect-square w-full flex-col p-5 sm:p-7 ${frame}`}>
+    <div className={`relative flex aspect-[4/3] w-full flex-col p-4 sm:aspect-square sm:p-7 ${frame}`}>
       <div className={`flex h-full flex-col rounded-xl border-2 p-4 sm:p-5 ${frame}`}>
         <div className="flex items-baseline justify-between gap-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.22em]">
@@ -292,7 +292,7 @@ function ProductCard({ product }: { product: Volume }) {
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.05)]">
       <Cover product={product} />
-      <div className="flex flex-1 flex-col p-6 md:p-7">
+      <div className="flex flex-1 flex-col p-5 md:p-6">
         <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#86868b]">
           {product.badge}
         </p>
@@ -361,7 +361,7 @@ export default function PromptsPage() {
       <SiteHeader />
 
       <main>
-        <section className="mx-auto max-w-6xl px-4 pb-10 pt-10 md:px-8 md:pb-14 md:pt-20">
+        <section className="mx-auto max-w-6xl px-4 pb-10 pt-8 md:px-8 md:pb-14 md:pt-12">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
             Prompt PDFs
           </p>
@@ -387,7 +387,7 @@ export default function PromptsPage() {
         </section>
 
         <section id="samples" className="border-t border-[#d2d2d7]">
-          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
               Prompt to output
             </p>
@@ -400,11 +400,11 @@ export default function PromptsPage() {
               copied word for word from the PDF<br />
               Copy one and try it yourself
             </p>
-            <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div className="-mx-4 mt-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:grid-cols-3 md:gap-6 md:overflow-visible md:px-0 md:pb-0">
               {SAMPLES.map((s) => (
                 <article
                   key={s.number}
-                  className="flex flex-col overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.05)]"
+                  className="flex w-[85%] shrink-0 snap-start flex-col overflow-hidden rounded-2xl border border-[#e8e8ed] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.05)] md:w-auto"
                 >
                   <div className="relative aspect-[3/2] w-full bg-[#f5f5f7]">
                     <Image
@@ -412,7 +412,7 @@ export default function PromptsPage() {
                       alt={s.alt}
                       fill
                       className="object-cover"
-                      sizes="(max-width: 768px) 100vw, 33vw"
+                      sizes="(max-width: 768px) 85vw, 33vw"
                     />
                   </div>
                   <div className="flex flex-1 flex-col p-5">
@@ -444,7 +444,7 @@ export default function PromptsPage() {
           id="products"
           className="border-t border-[#d2d2d7] bg-[#f5f5f7]"
         >
-          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
               <ProductCard product={VOLUME_1} />
               <ProductCard product={VOLUME_2} />
@@ -461,22 +461,22 @@ export default function PromptsPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+        <section className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
           <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
             Who these PDFs are for
           </h2>
-          <ul className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
+          <ul className="mt-5 grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4"> 
             {FOR_WHOM.map((line) => (
               <li
                 key={line}
-                className="rounded-2xl border border-[#e8e8ed] bg-white p-5 text-sm leading-relaxed text-[#86868b] shadow-[0_8px_28px_rgba(0,0,0,0.04)] md:p-6 md:text-[15px]"
+                className="rounded-2xl border border-[#e8e8ed] bg-white p-4 text-sm leading-relaxed text-[#86868b] shadow-[0_8px_28px_rgba(0,0,0,0.04)] md:p-5 md:text-[15px]"
               >
                 {line}
               </li>
             ))}
           </ul>
 
-          <h3 className="mt-12 text-xl font-semibold tracking-tight text-[#1d1d1f] md:text-2xl">
+          <h3 className="mt-8 text-xl font-semibold tracking-tight text-[#1d1d1f] md:text-2xl">
             Why buy
           </h3>
           <ul className="mt-5 space-y-3">
@@ -493,7 +493,7 @@ export default function PromptsPage() {
         </section>
 
         <section className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
-          <div className="mx-auto max-w-6xl px-4 py-12 md:px-8 md:py-16">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-12">
             <h2 className="text-xl font-semibold tracking-tight text-[#1d1d1f] md:text-2xl">
               Trust notes
             </h2>
@@ -532,8 +532,8 @@ export default function PromptsPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
-          <div className="rounded-2xl border border-[#d2d2d7] bg-white p-8 shadow-[0_12px_40px_rgba(0,0,0,0.06)] md:p-12">
+        <section className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
+          <div className="rounded-2xl border border-[#d2d2d7] bg-white p-6 shadow-[0_12px_40px_rgba(0,0,0,0.06)] md:p-8">
             <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-3xl">
               Ready to generate? Buy on Gumroad<br />
               Instant access after checkout

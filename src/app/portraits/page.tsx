@@ -60,8 +60,8 @@ export default function PortraitsPage() {
       <SiteHeader />
 
       <main>
-        <section className="mx-auto max-w-6xl px-4 pb-12 pt-10 md:px-8 md:pb-20 md:pt-20">
-          <div className="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr] md:gap-16">
+        <section className="mx-auto max-w-6xl px-4 pb-12 pt-8 md:px-8 md:pb-12 md:pt-12">
+          <div className="grid items-center gap-10 md:grid-cols-[1.05fr_0.95fr] md:gap-10">
             <div>
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
                 New portrait collection
@@ -121,7 +121,7 @@ export default function PortraitsPage() {
         </section>
 
         <section id="previews" className="border-y border-[#d2d2d7] bg-[#f5f5f7]">
-          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
             <div className="flex flex-col justify-between gap-3 md:flex-row md:items-end">
               <div>
                 <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
@@ -161,8 +161,8 @@ export default function PortraitsPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
-          <div className="grid gap-12 md:grid-cols-2 md:gap-16">
+        <section className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
+          <div className="grid gap-8 md:grid-cols-2 md:gap-10">
             <div>
               <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
                 Who it is for
@@ -193,7 +193,7 @@ export default function PortraitsPage() {
         </section>
 
         <section className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
-          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
               Clear terms
             </p>
@@ -218,7 +218,7 @@ export default function PortraitsPage() {
           </div>
         </section>
 
-        <section className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+        <section className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
           <div className="rounded-3xl border border-[#d2d2d7] bg-white p-8 shadow-[0_12px_40px_rgba(0,0,0,0.06)] md:p-12">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
               Ready when you are

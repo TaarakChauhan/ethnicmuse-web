@@ -63,7 +63,7 @@ export default function SareeStockPhotosForShopifyPage() {
       <SiteHeader />
 
       <main>
-        <section className="mx-auto max-w-6xl px-4 pb-12 pt-10 md:px-8 md:pb-16 md:pt-20">
+        <section className="mx-auto max-w-6xl px-4 pb-12 pt-8 md:px-8 md:pb-10 md:pt-12">
           <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
             Merchant guide
           </p>
@@ -139,7 +139,7 @@ export default function SareeStockPhotosForShopifyPage() {
                 : "border-t border-[#d2d2d7] bg-white"
             }
           >
-            <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+            <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
               <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
                 {section.eyebrow}
               </p>
@@ -161,7 +161,7 @@ export default function SareeStockPhotosForShopifyPage() {
         ))}
 
         <section className="border-t border-[#d2d2d7] bg-[#1d1d1f] text-white">
-          <div className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
+          <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
             <p className="text-xs font-medium uppercase tracking-[0.22em] text-white/70">
               Featured pack
             </p>

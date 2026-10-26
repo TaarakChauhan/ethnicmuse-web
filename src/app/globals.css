@@ -74,3 +74,11 @@ body {
 .mobile-sticky-cta {
   padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
 }
+
+.gallery-watermark-sm {
+  right: 0.35rem;
+  bottom: 0.35rem;
+  padding: 0.14rem 0.34rem;
+  font-size: 0.5rem;
+  letter-spacing: 0.06em;
+}

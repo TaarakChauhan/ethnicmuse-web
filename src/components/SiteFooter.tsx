@@ -6,14 +6,14 @@ type SiteFooterProps = {
 };
 
 export default function SiteFooter({
-  note = "EthnicMuseWorld. Commercial ethnic fashion stock.",
+  note = "EthnicMuseWorld\nCommercial ethnic fashion stock",
   className = "",
 }: SiteFooterProps) {
   return (
     <footer
       className={`border-t border-[#d2d2d7] py-8 text-center text-sm text-[#86868b] ${className}`}
     >
-      <p>{note}</p>
+      <p className="whitespace-pre-line">{note}</p>
       <nav className="mt-3 flex flex-wrap items-center justify-center gap-x-6 gap-y-2">
         <a href="/prompts" className="transition hover:text-[#1d1d1f]">
           Prompt PDFs

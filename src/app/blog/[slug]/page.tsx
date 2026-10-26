@@ -36,7 +36,7 @@ export default async function BlogPostPage({ params }: Props) {
           <h1 className="mt-4 text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl">
             {post.title}
           </h1>
-          <p className="mt-5 text-base leading-relaxed text-[#86868b] md:text-lg">
+          <p className="mt-5 whitespace-pre-line text-base leading-relaxed text-[#86868b] md:text-lg">
             {post.description}
           </p>
           <div className="mt-10 space-y-10">
@@ -49,7 +49,7 @@ export default async function BlogPostPage({ params }: Props) {
                 )}
                 <div className={section.heading ? "mt-4 space-y-4" : "space-y-4"}>
                   {section.paragraphs.map((p) => (
-                    <p key={p} className="text-base leading-relaxed text-[#424245]">
+                    <p key={p} className="whitespace-pre-line text-base leading-relaxed text-[#424245]">
                       {p}
                     </p>
                   ))}
@@ -73,8 +73,9 @@ export default async function BlogPostPage({ params }: Props) {
           <div className="mt-14 rounded-2xl border border-[#e8e8ed] bg-[#f5f5f7] px-6 py-6">
             <p className="text-sm leading-relaxed text-[#424245]">
               EthnicMuseWorld makes AI generated ethnic fashion stock packs for
-              banners, collections, social posts and emails. Every image is AI
-              generated and depicts adults only.
+              banners, collections, social posts and emails<br />
+              Every image is AI
+              generated and depicts adults only
             </p>
             <a
               href={GUMROAD_SHOP}

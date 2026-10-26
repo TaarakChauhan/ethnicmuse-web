@@ -18,7 +18,7 @@ const PACK_CARDS = [
     title: "The Saree Portrait Starter",
     price: "$9.99",
     priceNote: "USD",
-    bestFor: "Testing ad creatives, seasonal announcements, and social grids.",
+    bestFor: "Testing ad creatives, seasonal announcements, and social grids",
     inside: [
       "50 high resolution PNG saree portraits",
       "Curated mix of soft glam, warm window light, and festive silk looks",
@@ -34,7 +34,7 @@ const PACK_CARDS = [
     title: "The Complete Lifestyle Stock Bundle",
     price: "$14.99",
     priceNote: "USD",
-    bestFor: "Shopify collection launches, lookbooks, and full funnel Meta ad campaigns.",
+    bestFor: "Shopify collection launches, lookbooks, and full funnel Meta ad campaigns",
     inside: [
       "864 editorial and lifestyle stills spanning silk, velvet, evening glam, and studio portraits",
       "Cohesive skin tones, authentic jewelry styling, and rich fabric textures",
@@ -50,7 +50,7 @@ const PACK_CARDS = [
     title: "The Prompt Vault",
     price: "$4.99",
     priceNote: "USD per volume",
-    bestFor: "In house creative teams and designers generating their own brand visuals.",
+    bestFor: "In house creative teams and designers generating their own brand visuals",
     inside: [
       "2,000 tested AI image prompts across two volumes",
       "Written for authentic Indian drapes, lighting, and South Asian features",
@@ -65,18 +65,18 @@ const PACK_CARDS = [
 ];
 
 const LICENSE_CAN = [
-  { title: "Run paid ads", body: "use in Meta (Instagram and Facebook), Google, and Pinterest campaigns with unlimited impressions." },
-  { title: "Build your storefront", body: "Shopify product pages, collection banners, hero sliders, and lookbooks." },
-  { title: "Edit and customize", body: "add typography, logos, color grading, background swaps, or mockups." },
-  { title: "Client work", body: "agencies and freelancers may use a pack for one client brand per license." },
+  { title: "Run paid ads", body: "use in Meta (Instagram and Facebook), Google, and Pinterest campaigns with unlimited impressions" },
+  { title: "Build your storefront", body: "Shopify product pages, collection banners, hero sliders, and lookbooks" },
+  { title: "Edit and customize", body: "add typography, logos, color grading, background swaps, or mockups" },
+  { title: "Client work", body: "agencies and freelancers may use a pack for one client brand per license" },
 ];
 
 const LICENSE_CANNOT = [
-  { title: "Resell as stock", body: "do not redistribute or resell the raw files on stock sites, Gumroad, or free download hubs." },
-  { title: "Print on demand merch", body: "do not sell the standalone images printed on posters, shirts, or tote bags." },
-  { title: "Trademarks", body: "do not register the images as a trademark or logo." },
-  { title: "Training datasets", body: "do not use the files to train competing AI models or LoRAs." },
-  { title: "Fake endorsements", body: "do not imply a real brand or person endorsed you or was hired." },
+  { title: "Resell as stock", body: "do not redistribute or resell the raw files on stock sites, Gumroad, or free download hubs" },
+  { title: "Print on demand merch", body: "do not sell the standalone images printed on posters, shirts, or tote bags" },
+  { title: "Trademarks", body: "do not register the images as a trademark or logo" },
+  { title: "Training datasets", body: "do not use the files to train competing AI models or LoRAs" },
+  { title: "Fake endorsements", body: "do not imply a real brand or person endorsed you or was hired" },
 ];
 
 const GALLERY = [
@@ -220,14 +220,14 @@ export default function Home() {
         <section className="relative mx-auto max-w-6xl px-4 pb-8 pt-10 md:px-8 md:pb-14 md:pt-20">
           <h1 className="max-w-3xl text-3xl font-semibold leading-[1.15] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-6xl">
             <span className="md:hidden">
-              Indian saree and ethnic lifestyle images for ads and brand campaigns.
+              Indian saree and ethnic lifestyle images for ads and brand campaigns
             </span>
             <span className="hidden md:inline">
-              Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars.
+              Indian saree and ethnic lifestyle images for ads, lookbooks, and brand calendars
             </span>
           </h1>
           <p className="mt-5 max-w-xl text-sm leading-relaxed text-[#86868b] md:text-base">
-            For Shopify product pages, collection grids, Meta ads, and lookbooks.
+            For Shopify product pages, collection grids, Meta ads, and lookbooks
           </p>
           <div className="mt-8 flex flex-col items-start gap-4">
             <a
@@ -301,10 +301,11 @@ export default function Home() {
                 Unlock more
               </p>
               <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d1d1f]">
-                The rest of the library opens on Gumroad.
+                The rest of the library opens on Gumroad
               </h2>
               <p className="mt-3 text-base leading-relaxed text-[#86868b]">
-                Commercial license included. Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content.
+                Commercial license included<br />
+                Lifestyle and Ethnic Stock Bundle for Shopify ads, lookbooks, and brand content
               </p>
               <div className="mt-6 flex flex-col items-start gap-3">
                 <a
@@ -334,10 +335,12 @@ export default function Home() {
               Curated asset bundles
             </p>
             <h2 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight text-[#1d1d1f] md:text-5xl">
-              Studio grade ethnic campaigns. Zero shoot day overhead.
+              Studio grade ethnic campaigns<br />
+              Zero shoot day overhead
             </h2>
             <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
-              Skip the studio rentals, model coordination, and weeks of post production. Download cohesive, high resolution saree and ethnic lifestyle collections ready to drop straight into your Shopify themes, Meta ad sets, and festive lookbooks.
+              Skip the studio rentals, model coordination, and weeks of post production<br />
+              Download cohesive, high resolution saree and ethnic lifestyle collections ready to drop straight into your Shopify themes, Meta ad sets, and festive lookbooks
             </p>
 
             <div className="mt-10 grid grid-cols-1 items-stretch gap-5 md:grid-cols-3 md:gap-6">
@@ -403,7 +406,8 @@ export default function Home() {
               <a href={GUMROAD_HOME} target="_blank" rel="noreferrer" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
                 browse every pack in the full shop
               </a>
-              . Also see{" "}
+              <br />
+              Also see{" "}
               <a href="/portraits" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
                 Portraits
               </a>{" "}
@@ -411,7 +415,6 @@ export default function Home() {
               <a href="/saree-stock-photos-for-shopify" className="font-medium text-[#1d1d1f] underline decoration-[#d2d2d7] underline-offset-4 transition hover:opacity-80">
                 saree stock guide for Shopify
               </a>
-              .
             </p>
           </div>
         </section>
@@ -424,10 +427,11 @@ export default function Home() {
             Clear, worry free rights
           </p>
           <h2 className="mt-3 text-3xl font-semibold tracking-tight text-[#1d1d1f] md:text-5xl">
-            One simple license built for modern commerce.
+            One simple license built for modern commerce
           </h2>
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-[#86868b] md:text-base">
-            Every EthnicMuseWorld pack comes with a perpetual commercial license. No recurring royalties, no impression caps on your ads, and no confusing legal jargon.
+            Every EthnicMuseWorld pack comes with a perpetual commercial license<br />
+            No recurring royalties, no impression caps on your ads, and no confusing legal jargon
           </p>
 
           <div className="mt-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6">
@@ -455,11 +459,14 @@ export default function Home() {
           </div>
 
           <p className="mt-6 text-center text-sm leading-relaxed text-[#86868b]">
-            <span className="font-semibold text-[#1d1d1f]">Watermark free on delivery.</span>{" "}
-            The EthnicMuseWorld watermark you see in the live gallery is not on your downloaded files. Instant delivery through Gumroad right after checkout.
+            <span className="font-semibold text-[#1d1d1f]">Watermark free on delivery</span>
+            <br />
+            The EthnicMuseWorld watermark you see in the live gallery is not on your downloaded files<br />
+            Instant delivery through Gumroad right after checkout
           </p>
           <p className="mt-4 text-center text-xs leading-relaxed text-[#86868b]">
-            Images are AI generated and human curated ethnic fashion stock. They are not photographs of hired models, and you cannot claim the people are real models you photographed.
+            Images are AI generated and human curated ethnic fashion stock<br />
+            They are not photographs of hired models, and you cannot claim the people are real models you photographed
           </p>
         </section>
       </main>

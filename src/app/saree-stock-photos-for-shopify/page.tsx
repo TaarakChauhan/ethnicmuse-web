@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     "Royalty free saree and ethnic fashion stock photos for Shopify | EthnicMuseWorld",
   description:
-    "Where merchants find royalty free traditional Indian saree images and high quality ethnic fashion stock for Shopify product pages, lookbooks, and Meta ads. Commercial licensing included.",
+    "Where merchants find royalty free traditional Indian saree images and high quality ethnic fashion stock for Shopify product pages, lookbooks, and Meta ads, with commercial licensing included",
 };
 
 const LIFESTYLE_URL =
@@ -20,9 +20,9 @@ const SECTIONS = [
     eyebrow: "Saree stock",
     title: "Where to find royalty free traditional Indian saree images",
     body: [
-      "Merchants searching for royalty free traditional Indian saree images usually need stills that look ready for a product page, not generic lifestyle filler. Public photo sites often lack draped saree detail, festival color, and ethnically grounded styling.",
-      "EthnicMuseWorld builds commercial JPEG libraries for that gap. The Lifestyle bundle holds 864 ethnic fashion and lifestyle frames you can download once and reuse across catalogs, emails, and paid media.",
-      "Start with Lifestyle when you need breadth for Shopify. Use the quieter Portrait Pack when you only need close crop saree portraits.",
+      "Merchants searching for royalty free traditional Indian saree images usually need stills that look ready for a product page, not generic lifestyle filler\nPublic photo sites often lack draped saree detail, festival color, and ethnically grounded styling",
+      "EthnicMuseWorld builds commercial JPEG libraries for that gap\nThe Lifestyle bundle holds 864 ethnic fashion and lifestyle frames you can download once and reuse across catalogs, emails, and paid media",
+      "Start with Lifestyle when you need breadth for Shopify\nUse the quieter Portrait Pack when you only need close crop saree portraits",
     ],
   },
   {
@@ -30,9 +30,9 @@ const SECTIONS = [
     eyebrow: "License",
     title: "Licensing for commercial use of saree images",
     body: [
-      "Licensing for commercial use is the question that stops many Shopify launches. Free download walls can restrict ads, resale packaging, or client work. Ambiguous terms create risk when you scale Meta spend.",
-      "EthnicMuseWorld packs include a commercial license for brand content. Use the files in ads, websites, social posts, lookbooks, presentations, and client projects under those terms.",
-      "You may use the files in finished creative work. You may not resell, redistribute, or package the files as stock for someone else to download. AI disclosure stays on the site so buyers know these are AI generated adult fashion stills, not hired model shoots.",
+      "Licensing for commercial use is the question that stops many Shopify launches\nFree download walls can restrict ads, resale packaging, or client work\nAmbiguous terms create risk when you scale Meta spend",
+      "EthnicMuseWorld packs include a commercial license for brand content\nUse the files in ads, websites, social posts, lookbooks, presentations, and client projects under those terms",
+      "You may use the files in finished creative work\nYou may not resell, redistribute, or package the files as stock for someone else to download\nAI disclosure stays on the site so buyers know these are AI generated adult fashion stills, not hired model shoots",
     ],
   },
   {
@@ -40,9 +40,9 @@ const SECTIONS = [
     eyebrow: "Product pages",
     title: "High quality ethnic fashion stock for product pages",
     body: [
-      "High quality ethnic fashion stock for product pages means clean framing, readable textile detail, and enough variety to fill a collection grid without repeating one pose. Diverse ethnic fashion stock for commercial use also helps brand calendars stay fresh across seasons.",
-      "Lifestyle stills cover saree drapes, festive looks, and broader ethnic wear moods suited to Shopify catalogs. Pair them with your own product photography when you need true SKU color matches, and use stock for mood, lifestyle, and campaign layers.",
-      "High quality images for ethnic wear products should also travel well into email headers, landing sections, and lookbook PDFs. JPEG delivery keeps the workflow simple inside Shopify, Canva, and standard ad tools.",
+      "High quality ethnic fashion stock for product pages means clean framing, readable textile detail, and enough variety to fill a collection grid without repeating one pose\nDiverse ethnic fashion stock for commercial use also helps brand calendars stay fresh across seasons",
+      "Lifestyle stills cover saree drapes, festive looks, and broader ethnic wear moods suited to Shopify catalogs\nPair them with your own product photography when you need true SKU color matches, and use stock for mood, lifestyle, and campaign layers",
+      "High quality images for ethnic wear products should also travel well into email headers, landing sections, and lookbook PDFs\nJPEG delivery keeps the workflow simple inside Shopify, Canva, and standard ad tools",
     ],
   },
   {
@@ -50,9 +50,9 @@ const SECTIONS = [
     eyebrow: "Shopify and Meta",
     title: "Using stills on Shopify catalogs and Meta ads",
     body: [
-      "Shopify ethnic clothing images need to work in two places at once. Catalog grids want square friendly crops. Meta ads want faces, color, and a clear fashion story that stops the scroll.",
-      "Download the Lifestyle bundle, pick frames that match your collection story, and upload them to Shopify media or your Meta Ads Manager creative set. Keep product truth on your own shots. Use stock for lifestyle proof and paid reach.",
-      "Best websites for saree stock photos are useful only when the license matches paid traffic. EthnicMuseWorld sells a clear commercial path at one price so you are not stitching licenses from five free sites before launch.",
+      "Shopify ethnic clothing images need to work in two places at once\nCatalog grids want square friendly crops\nMeta ads want faces, color, and a clear fashion story that stops the scroll",
+      "Download the Lifestyle bundle, pick frames that match your collection story, and upload them to Shopify media or your Meta Ads Manager creative set\nKeep product truth on your own shots\nUse stock for lifestyle proof and paid reach",
+      "Best websites for saree stock photos are useful only when the license matches paid traffic\nEthnicMuseWorld sells a clear commercial path at one price so you are not stitching licenses from five free sites before launch",
     ],
   },
 ];
@@ -73,10 +73,11 @@ export default function SareeStockPhotosForShopifyPage() {
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#86868b] md:text-lg">
             Built for merchants who need PDP stills, lookbook frames, and ad
-            creatives without a new shoot. This guide answers where to download
+            creatives without a new shoot<br />
+            This guide answers where to download
             royalty free traditional Indian saree images, how commercial
             licensing works, and how to place high quality ethnic fashion stock
-            on Shopify catalogs and Meta ads.
+            on Shopify catalogs and Meta ads
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <a
@@ -88,7 +89,9 @@ export default function SareeStockPhotosForShopifyPage() {
               Shop Lifestyle stills
             </a>
             <p className="text-sm text-[#86868b]">
-              864 commercial JPEGs. $14.99 USD. Instant Gumroad download.
+              864 commercial JPEGs<br />
+              $14.99 USD<br />
+              Instant Gumroad download
             </p>
           </div>
         </section>
@@ -147,7 +150,7 @@ export default function SareeStockPhotosForShopifyPage() {
                 {section.body.map((paragraph) => (
                   <p
                     key={paragraph}
-                    className="text-sm leading-relaxed text-[#86868b] md:text-base"
+                    className="whitespace-pre-line text-sm leading-relaxed text-[#86868b] md:text-base"
                   >
                     {paragraph}
                   </p>
@@ -167,8 +170,10 @@ export default function SareeStockPhotosForShopifyPage() {
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-white/75 md:text-base">
               864 commercial ethnic fashion and lifestyle JPEGs for product
-              pages, collection grids, lookbooks, and Meta ads. One clear
-              commercial license. $14.99 USD on Gumroad.
+              pages, collection grids, lookbooks, and Meta ads<br />
+              One clear
+              commercial license<br />
+              $14.99 USD on Gumroad
             </p>
             <a
               href={LIFESTYLE_URL}
@@ -189,13 +194,13 @@ export default function SareeStockPhotosForShopifyPage() {
                 Portrait Pack for $7.99
               </a>
               {" "}
-              stays available as a quiet option.
+              stays available as a quiet option
             </p>
           </div>
         </section>
       </main>
 
-      <SiteFooter note="EthnicMuseWorld. Royalty free ethnic fashion stock for Shopify merchants." />
+      <SiteFooter note={"EthnicMuseWorld\nRoyalty free ethnic fashion stock for Shopify merchants"} />
     </div>
   );
 }

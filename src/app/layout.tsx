@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   applicationName: "EthnicMuseWorld",
   openGraph: { siteName: "EthnicMuseWorld", title: "EthnicMuseWorld | Commercial ethnic fashion stock", type: "website" },
   description:
-    "Commercial license Indian ethnic fashion and saree lifestyle stock for ads, lookbooks, and brand calendars.",
+    "Commercial license Indian ethnic fashion and saree lifestyle stock for ads, lookbooks, and brand calendars",
 };
 
 export default function RootLayout({

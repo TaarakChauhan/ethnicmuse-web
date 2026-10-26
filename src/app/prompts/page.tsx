@@ -8,7 +8,7 @@ import SiteHeader from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "Prompt PDFs | EthnicMuse Saree Stock AI Prompts",
   description:
-    "Two PDF volumes with 1,000 coherent saree stock AI image prompts each, or both for $7.99. See real prompt to output samples. Instant Gumroad download.",
+    "Two PDF volumes with 1,000 coherent saree stock AI image prompts each, or both for $7.99, with real prompt to output samples and instant Gumroad download",
 };
 
 const GUMROAD_HOME = "https://ethnicmuse.gumroad.com";
@@ -44,7 +44,7 @@ const VOLUME_1: Volume = {
   url: "https://ethnicmuse.gumroad.com/l/baemqv",
   badge: "Volume 1 · Prompts 1 to 1000",
   blurb:
-    "1,000 paste ready prompts for photorealistic saree stock. Each card is one full paragraph with a locked adult Indian woman look, blouse and saree wardrobe, mood, location, light, and camera that agree. Aspect ratios on each card. 508 page printable PDF.",
+    "1,000 paste ready prompts for photorealistic saree stock\nEach card is one full paragraph with a locked adult Indian woman look, blouse and saree wardrobe, mood, location, light, and camera that agree\nAspect ratios on each card\n508 page printable PDF",
   bullets: [
     "1,000 numbered prompts",
     "10 mood categories, 100 prompts each",
@@ -83,7 +83,7 @@ const VOLUME_2: Volume = {
   url: "https://ethnicmuse.gumroad.com/l/zkpqe",
   badge: "Volume 2 · Prompts 1000 to 1999",
   blurb:
-    "Another 1,000 prompts that continue the library. Fresh fabrics, locations, and wording versus Volume 1, plus three moods Volume 1 does not have: Atelier, Coast, and Night. Same coherent paragraph format. Same subject lock.",
+    "Another 1,000 prompts that continue the library\nFresh fabrics, locations, and wording versus Volume 1, plus three moods Volume 1 does not have: Atelier, Coast, and Night\nSame coherent paragraph format\nSame subject lock",
   bullets: [
     "1,000 numbered prompts (1000 to 1999)",
     "10 mood categories, 100 prompts each",
@@ -155,44 +155,44 @@ const SAMPLES = [
 ];
 
 const FOR_WHOM = [
-  "Shopify ethnic wear sellers who need campaign frames without a full shoot.",
-  "Lookbook makers who want bridal, heritage, lifestyle, and editorial saree scenes on demand.",
-  "AI image creators who are tired of prompts that break wardrobe, light, or pose mid generation.",
-  "Agencies and freelancers building Indian ethnic fashion ads, site banners, and content calendars.",
+  "Shopify ethnic wear sellers who need campaign frames without a full shoot",
+  "Lookbook makers who want bridal, heritage, lifestyle, and editorial saree scenes on demand",
+  "AI image creators who are tired of prompts that break wardrobe, light, or pose mid generation",
+  "Agencies and freelancers building Indian ethnic fashion ads, site banners, and content calendars",
 ];
 
 const WHY_BUY = [
-  "You get coherent scene kits, not random prompt soup.",
-  "Subject look stays stable across the set so campaigns feel like one library.",
-  "Mood tags help you jump to bridal, catalog, festival, atelier, coast, and more.",
-  "PDF format means you browse, copy, and go. No app lock in.",
+  "You get coherent scene kits, not random prompt soup",
+  "Subject look stays stable across the set so campaigns feel like one library",
+  "Mood tags help you jump to bridal, catalog, festival, atelier, coast, and more",
+  "PDF format means you browse, copy, and go\nNo app lock in",
 ];
 
 const TRUST = [
   {
     title: "Commercial use of the PDF",
     icon: "check",
-    body: "You buy the prompt library for your own creative workflows. Paste prompts into your image tools. Follow each model provider’s terms for the images you generate.",
+    body: "You buy the prompt library for your own creative workflows\nPaste prompts into your image tools\nFollow each model provider’s terms for the images you generate",
   },
   {
     title: "AI disclosure",
     icon: "info",
-    body: "These are text prompts for AI image tools. They are not photographs of hired models. Outputs you create are AI generated unless you say otherwise in your own marketing.",
+    body: "These are text prompts for AI image tools\nThey are not photographs of hired models\nOutputs you create are AI generated unless you say otherwise in your own marketing",
   },
   {
     title: "Not the image packs",
     icon: "layers",
-    body: "EthnicMuseWorld also sells ready stock image bundles with a commercial license for those files. This page is for prompt PDFs only.",
+    body: "EthnicMuseWorld also sells ready stock image bundles with a commercial license for those files\nThis page is for prompt PDFs only",
   },
   {
     title: "Refunds",
     icon: "refresh",
-    body: "If a download fails, message the seller through Gumroad. Gumroad may still refund under its own rules.",
+    body: "If a download fails, message the seller through Gumroad\nGumroad may still refund under its own rules",
   },
   {
     title: "Adult subject lock",
     icon: "shield",
-    body: "Every prompt specifies an adult Indian woman subject. Built for commercial fashion and stock use cases.",
+    body: "Every prompt specifies an adult Indian woman subject\nBuilt for commercial fashion and stock use cases",
   },
 ];
 
@@ -302,7 +302,7 @@ function ProductCard({ product }: { product: Volume }) {
         <p className="mt-2 text-lg font-semibold text-[#1d1d1f]">
           {product.price}
         </p>
-        <p className="mt-3 text-sm leading-relaxed text-[#86868b] md:text-[15px]">
+        <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-[#86868b] md:text-[15px]">
           {product.blurb}
         </p>
         <div className="mt-5">
@@ -329,7 +329,7 @@ function ProductCard({ product }: { product: Volume }) {
             })}
           </ul>
           <p className="mt-2 text-xs text-[#86868b]">
-            Filled pills are only in this volume.
+            Filled pills are only in this volume
           </p>
         </div>
         <ul className="mt-5 space-y-2 text-sm text-[#1d1d1f]">
@@ -366,15 +366,20 @@ export default function PromptsPage() {
             Prompt PDFs
           </p>
           <h1 className="mt-4 max-w-3xl text-3xl font-semibold leading-[1.15] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-6xl">
-            Saree stock prompts you can paste and run.
+            Saree stock prompts you can paste and run
           </h1>
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#86868b] md:text-lg">
-            Two prompt PDF volumes. One thousand coherent AI image prompts
-            each. Paste into Midjourney, Flux, Gemini, and similar models so
-            wardrobe, light, location, and camera stay in sync.
+            Two prompt PDF volumes<br />
+            One thousand coherent AI image prompts
+            each<br />
+            Paste into Midjourney, Flux, Gemini, and similar models so
+            wardrobe, light, location, and camera stay in sync
           </p>
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-[#86868b] md:text-base">
-            Instant Gumroad download. Open the PDF. Copy a paragraph. Generate.
+            Instant Gumroad download<br />
+            Open the PDF<br />
+            Copy a paragraph<br />
+            Generate
           </p>
           <div className="mt-8">
             <BuyButtons />
@@ -387,11 +392,13 @@ export default function PromptsPage() {
               Prompt to output
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
-              Real prompts from the PDFs. Real results.
+              Real prompts from the PDFs<br />
+              Real results
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#86868b] md:text-base">
               Each image below was generated from the exact paragraph shown,
-              copied word for word from the PDF. Copy one and try it yourself.
+              copied word for word from the PDF<br />
+              Copy one and try it yourself
             </p>
             <div className="mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
               {SAMPLES.map((s) => (
@@ -445,7 +452,7 @@ export default function PromptsPage() {
             <div className="mt-8 flex flex-col items-center gap-3 text-center">
               <p className="text-sm text-[#86868b] md:text-base">
                 Want all 20 moods? Get both volumes in one checkout for $7.99
-                instead of $9.98.
+                instead of $9.98
               </p>
               <a href={BUNDLE.url} target="_blank" rel="noreferrer" className={btnPrimary}>
                 {BUNDLE.button}
@@ -479,7 +486,7 @@ export default function PromptsPage() {
                 className="flex gap-3 text-sm leading-relaxed text-[#86868b] md:text-base"
               >
                 <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#1d1d1f]" />
-                <span>{line}</span>
+                <span className="whitespace-pre-line">{line}</span>
               </li>
             ))}
           </ul>
@@ -515,7 +522,7 @@ export default function PromptsPage() {
                     <h3 className="text-sm font-semibold tracking-tight text-[#1d1d1f]">
                       {item.title}
                     </h3>
-                    <p className="mt-1 text-[13px] leading-relaxed text-[#86868b]">
+                    <p className="mt-1 whitespace-pre-line text-[13px] leading-relaxed text-[#86868b]">
                       {item.body}
                     </p>
                   </div>
@@ -528,10 +535,11 @@ export default function PromptsPage() {
         <section className="mx-auto max-w-6xl px-4 py-14 md:px-8 md:py-20">
           <div className="rounded-2xl border border-[#d2d2d7] bg-white p-8 shadow-[0_12px_40px_rgba(0,0,0,0.06)] md:p-12">
             <h2 className="text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-3xl">
-              Ready to generate? Buy on Gumroad. Instant access after checkout.
+              Ready to generate? Buy on Gumroad<br />
+              Instant access after checkout
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-[#86868b] md:text-base">
-              Open on Gumroad and download your PDF.
+              Open on Gumroad and download your PDF
             </p>
             <div className="mt-7">
               <BuyButtons />
@@ -544,14 +552,14 @@ export default function PromptsPage() {
                 rel="noreferrer"
                 className="font-semibold text-[#0071e3] transition hover:opacity-80"
               >
-                Browse the EthnicMuseWorld stock library on Gumroad.
+                Browse the EthnicMuseWorld stock library on Gumroad
               </a>
             </p>
           </div>
         </section>
       </main>
 
-      <SiteFooter note="EthnicMuseWorld. Prompt PDFs for saree stock photography." />
+      <SiteFooter note={"EthnicMuseWorld\nPrompt PDFs for saree stock photography"} />
     </div>
   );
 }

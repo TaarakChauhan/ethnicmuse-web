@@ -48,7 +48,7 @@ export default function FaqPage() {
                       <h3 className="text-lg font-semibold tracking-tight text-[#1d1d1f]">
                         {item.question}
                       </h3>
-                      <p className="mt-3 text-base leading-relaxed text-[#424245]">
+                      <p className="mt-3 whitespace-pre-line text-base leading-relaxed text-[#424245]">
                         {item.answer}
                       </p>
                     </div>
@@ -69,7 +69,8 @@ export default function FaqPage() {
                 >
                   ethnicmusestudio@gmail.com
                 </a>
-                . Browse every pack at{" "}
+                <br />
+                Browse every pack at{" "}
                 <a
                   href="https://ethnicmuse.gumroad.com"
                   target="_blank"
@@ -78,7 +79,6 @@ export default function FaqPage() {
                 >
                   ethnicmuse.gumroad.com
                 </a>
-                .
               </p>
             </div>
           </div>

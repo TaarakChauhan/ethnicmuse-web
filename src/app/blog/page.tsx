@@ -6,7 +6,7 @@ import { POSTS } from "@/content/blog";
 export const metadata: Metadata = {
   title: "Blog | EthnicMuseWorld",
   description:
-    "Practical, honest guides for small saree and ethnic wear stores: product photos, Diwali prep, image licensing, saree drapes and better product pages.",
+    "Practical, honest guides for small saree and ethnic wear stores: product photos, Diwali prep, image licensing, saree drapes and better product pages",
 };
 
 export default function BlogIndexPage() {
@@ -24,7 +24,7 @@ export default function BlogIndexPage() {
           <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#86868b] md:text-lg">
             Practical guides for small saree and ethnic wear shops on photos,
             festive seasons, honest use of AI images and product pages that
-            help shoppers say yes.
+            help shoppers say yes
           </p>
         </section>
         <section className="border-t border-[#d2d2d7] bg-[#f5f5f7]">
@@ -41,7 +41,7 @@ export default function BlogIndexPage() {
                 <h2 className="mt-3 text-xl font-semibold tracking-tight text-[#1d1d1f]">
                   {post.title}
                 </h2>
-                <p className="mt-3 text-sm leading-relaxed text-[#86868b]">
+                <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-[#86868b]">
                   {post.excerpt}
                 </p>
                 <p className="mt-4 text-sm font-semibold text-[#1d1d1f]">

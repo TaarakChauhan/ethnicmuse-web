@@ -6,7 +6,7 @@ import SiteHeader from "@/components/SiteHeader";
 export const metadata: Metadata = {
   title: "EthnicMuse Saree Portrait Pack | 50 Commercial Stock Portraits",
   description:
-    "EthnicMuse Saree Portrait Pack. 50 commercial PNG saree stock portraits of adult Indian women for campaigns, lookbooks, websites, and social content.",
+    "EthnicMuse Saree Portrait Pack: 50 commercial PNG saree stock portraits of adult Indian women for campaigns, lookbooks, websites, and social content",
 };
 
 const GUMROAD_URL =
@@ -22,35 +22,35 @@ const PREVIEWS = [
 ];
 
 const FOR_WHOM = [
-  "Ethnic wear shops building product pages and campaign content.",
-  "Lookbook makers who need polished saree portraits without a new shoot.",
-  "Agencies and freelancers creating Indian fashion ads and content calendars.",
-  "Creators who want a ready library for websites, social posts, and mood boards.",
+  "Ethnic wear shops building product pages and campaign content",
+  "Lookbook makers who need polished saree portraits without a new shoot",
+  "Agencies and freelancers creating Indian fashion ads and content calendars",
+  "Creators who want a ready library for websites, social posts, and mood boards",
 ];
 
 const WHY_BUY = [
-  "50 PNG portraits give you a focused visual library at one simple price.",
-  "Saree focused portraits make it easier to keep your campaign visually aligned.",
-  "Commercial licensing is included for brand content and client work.",
-  "Download the files from Gumroad and use them in the tools you already know.",
+  "50 PNG portraits give you a focused visual library at one simple price",
+  "Saree focused portraits make it easier to keep your campaign visually aligned",
+  "Commercial licensing is included for brand content and client work",
+  "Download the files from Gumroad and use them in the tools you already know",
 ];
 
 const TRUST = [
   {
     title: "AI disclosure",
-    body: "These are AI generated stock portraits of adult Indian women. They are not photographs of hired models or real people photographed by EthnicMuseWorld.",
+    body: "These are AI generated stock portraits of adult Indian women\nThey are not photographs of hired models or real people photographed by EthnicMuseWorld",
   },
   {
     title: "Commercial license",
-    body: "Use the portraits in ads, websites, social content, lookbooks, presentations, and client projects under the included commercial license.",
+    body: "Use the portraits in ads, websites, social content, lookbooks, presentations, and client projects under the included commercial license",
   },
   {
     title: "Not a stock resale pack",
-    body: "You may use the files in finished creative work. You may not resell, redistribute, or package the files as stock for someone else to download.",
+    body: "You may use the files in finished creative work\nYou may not resell, redistribute, or package the files as stock for someone else to download",
   },
   {
     title: "What you receive",
-    body: "One digital pack with 50 commercial PNG saree stock portraits. Gumroad provides the download after checkout.",
+    body: "One digital pack with 50 commercial PNG saree stock portraits\nGumroad provides the download after checkout",
   },
 ];
 
@@ -67,12 +67,13 @@ export default function PortraitsPage() {
                 New portrait collection
               </p>
               <h1 className="mt-4 max-w-2xl text-3xl font-semibold leading-[1.1] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-6xl">
-                Saree portraits for your next beautiful campaign.
+                Saree portraits for your next beautiful campaign
               </h1>
               <p className="mt-5 max-w-xl text-base leading-relaxed text-[#86868b] md:text-lg">
                 EthnicMuse Saree Portrait Pack gives you 50 commercial PNG
-                portraits of adult Indian women in saree looks. A focused,
-                ready to use library for brands, creators, and client work.
+                portraits of adult Indian women in saree looks<br />
+                A focused,
+                ready to use library for brands, creators, and client work
               </p>
               <div className="mt-7 flex flex-wrap gap-2 text-sm text-[#1d1d1f]">
                 <span className="rounded-full bg-[#f5f5f7] px-4 py-2">50 portraits</span>
@@ -96,7 +97,7 @@ export default function PortraitsPage() {
                 </a>
               </div>
               <p className="mt-4 text-sm text-[#86868b]">
-                Instant digital download through Gumroad.
+                Instant digital download through Gumroad
               </p>
             </div>
 
@@ -127,12 +128,13 @@ export default function PortraitsPage() {
                   A closer look
                 </p>
                 <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
-                  Six previews from the collection.
+                  Six previews from the collection
                 </h2>
               </div>
               <p className="max-w-sm text-sm leading-relaxed text-[#86868b]">
-                The full pack includes 50 portraits. These previews show the
-                range of saree styling and visual moods inside.
+                The full pack includes 50 portraits<br />
+                These previews show the
+                range of saree styling and visual moods inside
               </p>
             </div>
             <div className="mt-8 grid grid-cols-2 gap-3 md:grid-cols-3 md:gap-5">
@@ -196,7 +198,7 @@ export default function PortraitsPage() {
               Clear terms
             </p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
-              Trust notes before you buy.
+              Trust notes before you buy
             </h2>
             <div className="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2">
               {TRUST.map((item) => (
@@ -207,7 +209,7 @@ export default function PortraitsPage() {
                   <h3 className="text-base font-semibold tracking-tight text-[#1d1d1f]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-relaxed text-[#86868b]">
+                  <p className="mt-2 whitespace-pre-line text-sm leading-relaxed text-[#86868b]">
                     {item.body}
                   </p>
                 </article>
@@ -222,11 +224,12 @@ export default function PortraitsPage() {
               Ready when you are
             </p>
             <h2 className="mt-3 max-w-2xl text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
-              Bring more saree beauty to your next piece of content.
+              Bring more saree beauty to your next piece of content
             </h2>
             <p className="mt-3 max-w-2xl text-sm leading-relaxed text-[#86868b] md:text-base">
-              Get 50 commercial PNG portraits for $9.99. Download the pack
-              on Gumroad and start creating.
+              Get 50 commercial PNG portraits for $9.99<br />
+              Download the pack
+              on Gumroad and start creating
             </p>
             <a
               href={GUMROAD_URL}

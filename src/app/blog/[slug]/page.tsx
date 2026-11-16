@@ -1,4 +1,6 @@
+import Link from "next/link";
 import type { Metadata } from "next";
+import { pageMetadata, SITE_URL } from "@/lib/metadata";
 import { notFound } from "next/navigation";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
@@ -14,7 +16,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getPost(slug);
   if (!post) return {};
-  return { title: `${post.title} | EthnicMuseWorld`, description: post.description };
+  return pageMetadata(post.title, post.description, `/blog/${post.slug}`);
 }
 
 export default async function BlogPostPage({ params }: Props) {
@@ -23,20 +25,21 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#ffffff] text-[#1d1d1f]">
+    <div className="min-h-screen overflow-x-hidden bg-[#faf8f4] text-[#1d1d1f]">
       <SiteHeader />
-      <main>
+      <main id="main-content">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:post.title,description:post.description,datePublished:post.date,author:{"@type":"Organization",name:"EthnicMuseWorld"},mainEntityOfPage:SITE_URL+"/blog/"+post.slug}).replace(/</g,"\\u003c")}} />
         <article className="mx-auto max-w-3xl px-4 pb-16 pt-10 md:px-8 md:pt-20">
-          <a href="/blog" className="text-sm text-[#86868b] hover:text-[#1d1d1f]">
+          <Link href="/blog" className="text-sm text-[#655f56] hover:text-[#1d1d1f]">
             Back to the blog
-          </a>
-          <p className="mt-6 text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
+          </Link>
+          <p className="mt-6 text-xs font-medium uppercase tracking-[0.22em] text-[#655f56]">
             {post.readMinutes} min read
           </p>
           <h1 className="mt-4 text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl md:text-5xl">
             {post.title}
           </h1>
-          <p className="mt-5 whitespace-pre-line text-base leading-relaxed text-[#86868b] md:text-lg">
+          <p className="mt-5 whitespace-pre-line text-base leading-relaxed text-[#655f56] md:text-lg">
             {post.description}
           </p>
           <div className="mt-10 space-y-10">
@@ -54,7 +57,7 @@ export default async function BlogPostPage({ params }: Props) {
                     </p>
                   ))}
                   {section.source && (
-                    <p className="text-sm text-[#86868b]">
+                    <p className="text-sm text-[#655f56]">
                       Source:{" "}
                       <a
                         href={section.source.href}
@@ -70,7 +73,7 @@ export default async function BlogPostPage({ params }: Props) {
               </section>
             ))}
           </div>
-          <div className="mt-14 rounded-2xl border border-[#e8e8ed] bg-[#f5f5f7] px-6 py-6">
+          <div className="mt-14 rounded-2xl border border-[#e8e8ed] bg-[#f0ebe2] px-6 py-6">
             <p className="text-sm leading-relaxed text-[#424245]">
               EthnicMuseWorld makes AI generated ethnic fashion stock packs for
               banners, collections, social posts and emails<br />

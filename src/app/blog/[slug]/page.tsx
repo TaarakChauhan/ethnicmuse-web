@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { pageMetadata, SITE_URL } from "@/lib/metadata";
 import { notFound } from "next/navigation";
@@ -29,9 +30,9 @@ export default async function BlogPostPage({ params }: Props) {
       <main id="main-content">
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({"@context":"https://schema.org","@type":"Article",headline:post.title,description:post.description,datePublished:post.date,author:{"@type":"Organization",name:"EthnicMuseWorld"},mainEntityOfPage:SITE_URL+"/blog/"+post.slug}).replace(/</g,"\\u003c")}} />
         <article className="mx-auto max-w-3xl px-4 pb-16 pt-10 md:px-8 md:pt-20">
-          <a href="/blog" className="text-sm text-[#655f56] hover:text-[#1d1d1f]">
+          <Link href="/blog" className="text-sm text-[#655f56] hover:text-[#1d1d1f]">
             Back to the blog
-          </a>
+          </Link>
           <p className="mt-6 text-xs font-medium uppercase tracking-[0.22em] text-[#655f56]">
             {post.readMinutes} min read
           </p>

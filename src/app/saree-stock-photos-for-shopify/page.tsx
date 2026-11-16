@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/metadata";
 import SiteFooter from "@/components/SiteFooter";
 import SiteHeader from "@/components/SiteHeader";
 
-export const metadata: Metadata = {
+const originalMetadata: Metadata = {
   title:
     "Royalty free saree and ethnic fashion stock photos for Shopify | EthnicMuseWorld",
   description:
     "Where merchants find royalty free traditional Indian saree images and high quality ethnic fashion stock for Shopify product pages, lookbooks, and Meta ads, with commercial licensing included",
 };
+export const metadata = pageMetadata(String(originalMetadata.title), String(originalMetadata.description), "/saree-stock-photos-for-shopify");
 
 const LIFESTYLE_URL =
   "https://ethnicmuse.gumroad.com/l/EthnicMuseWorldLifestyleEthnicStockBundle";
@@ -59,19 +61,19 @@ const SECTIONS = [
 
 export default function SareeStockPhotosForShopifyPage() {
   return (
-    <div className="min-h-screen overflow-x-hidden bg-[#ffffff] text-[#1d1d1f]">
+    <div className="min-h-screen overflow-x-hidden bg-[#faf8f4] text-[#1d1d1f]">
       <SiteHeader />
 
-      <main>
+      <main id="main-content">
         <section className="mx-auto max-w-6xl px-4 pb-12 pt-8 md:px-8 md:pb-10 md:pt-12">
-          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
+          <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#655f56]">
             Merchant guide
           </p>
           <h1 className="mt-4 max-w-4xl text-3xl font-semibold leading-[1.1] tracking-tight text-[#1d1d1f] sm:text-4xl md:text-5xl lg:text-[3.25rem]">
             Where to find royalty free saree and ethnic fashion stock photos for
             a Shopify store
           </h1>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#86868b] md:text-lg">
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-[#655f56] md:text-lg">
             Built for merchants who need PDP stills, lookbook frames, and ad
             creatives without a new shoot<br />
             This guide answers where to download
@@ -88,7 +90,7 @@ export default function SareeStockPhotosForShopifyPage() {
             >
               Shop Lifestyle stills
             </a>
-            <p className="text-sm text-[#86868b]">
+            <p className="text-sm text-[#655f56]">
               864 commercial JPEGs<br />
               $14.99 USD<br />
               Instant Gumroad download
@@ -96,7 +98,7 @@ export default function SareeStockPhotosForShopifyPage() {
           </div>
         </section>
 
-        <section className="border-y border-[#d2d2d7] bg-[#f5f5f7]">
+        <section className="border-y border-[#d2d2d7] bg-[#f0ebe2]">
           <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-12">
             <div className="grid gap-4 md:grid-cols-3">
               {[
@@ -117,7 +119,7 @@ export default function SareeStockPhotosForShopifyPage() {
                   key={item.label}
                   className="rounded-2xl border border-[#e8e8ed] bg-white px-5 py-4 shadow-[0_8px_28px_rgba(0,0,0,0.04)]"
                 >
-                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#86868b]">
+                  <p className="text-xs font-medium uppercase tracking-[0.18em] text-[#655f56]">
                     {item.label}
                   </p>
                   <p className="mt-2 text-base font-semibold tracking-tight text-[#1d1d1f]">
@@ -135,12 +137,12 @@ export default function SareeStockPhotosForShopifyPage() {
             id={section.id}
             className={
               index % 2 === 1
-                ? "border-t border-[#d2d2d7] bg-[#f5f5f7]"
+                ? "border-t border-[#d2d2d7] bg-[#f0ebe2]"
                 : "border-t border-[#d2d2d7] bg-white"
             }
           >
             <div className="mx-auto max-w-6xl px-4 py-10 md:px-8 md:py-14">
-              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#86868b]">
+              <p className="text-xs font-medium uppercase tracking-[0.22em] text-[#655f56]">
                 {section.eyebrow}
               </p>
               <h2 className="mt-3 max-w-3xl text-2xl font-semibold tracking-tight text-[#1d1d1f] md:text-4xl">
@@ -150,7 +152,7 @@ export default function SareeStockPhotosForShopifyPage() {
                 {section.body.map((paragraph) => (
                   <p
                     key={paragraph}
-                    className="whitespace-pre-line text-sm leading-relaxed text-[#86868b] md:text-base"
+                    className="whitespace-pre-line text-sm leading-relaxed text-[#655f56] md:text-base"
                   >
                     {paragraph}
                   </p>
@@ -179,7 +181,7 @@ export default function SareeStockPhotosForShopifyPage() {
               href={LIFESTYLE_URL}
               target="_blank"
               rel="noreferrer"
-              className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d1d1f] transition hover:bg-[#f5f5f7]"
+              className="mt-8 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-[#1d1d1f] transition hover:bg-[#f0ebe2]"
             >
               Shop Lifestyle stills
             </a>
